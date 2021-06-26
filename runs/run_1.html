@@ -59,7 +59,7 @@ window.kaggle = {
   "step": 0,
   "controls": true,
   "environment": {
-    "id": "3685b868-d533-11eb-a9bd-1e006226cc3a",
+    "id": "76d9b434-d67b-11eb-bab7-1e006226cc39",
     "name": "hungry_geese",
     "title": "Hungry Geese",
     "description": "Similar to the classic snake game with multiple players",
@@ -192,7 +192,7 @@ window.kaggle = {
       "reward": {
         "description": "steps survived * (max goose length + 1) + current goose length.",
         "type": [
-          "integer",
+          "number",
           "null"
         ],
         "default": 0,
@@ -210,15 +210,15 @@ window.kaggle = {
             "step": 0,
             "geese": [
               [
-                70
+                43
               ],
               [
-                14
+                59
               ]
             ],
             "food": [
-              9,
-              48
+              11,
+              46
             ],
             "index": 0
           },
@@ -245,15 +245,15 @@ window.kaggle = {
             "step": 1,
             "geese": [
               [
-                59
+                32
               ],
               [
-                3
+                48
               ]
             ],
             "food": [
-              9,
-              48
+              11,
+              46
             ],
             "index": 0
           },
@@ -273,30 +273,29 @@ window.kaggle = {
       [
         {
           "action": "NORTH",
-          "reward": 302,
+          "reward": 301,
           "info": {},
           "observation": {
             "remainingOverageTime": 60,
             "step": 2,
             "geese": [
               [
-                48,
-                59
+                21
               ],
               [
-                4
+                37
               ]
             ],
             "food": [
-              9,
-              13
+              11,
+              46
             ],
             "index": 0
           },
           "status": "ACTIVE"
         },
         {
-          "action": "EAST",
+          "action": "NORTH",
           "reward": 301,
           "info": {},
           "observation": {
@@ -308,31 +307,30 @@ window.kaggle = {
       ],
       [
         {
-          "action": "NORTH",
-          "reward": 402,
+          "action": "WEST",
+          "reward": 401,
           "info": {},
           "observation": {
             "remainingOverageTime": 60,
             "step": 3,
             "geese": [
               [
-                37,
-                48
+                20
               ],
               [
-                5
+                26
               ]
             ],
             "food": [
-              9,
-              13
+              11,
+              46
             ],
             "index": 0
           },
           "status": "ACTIVE"
         },
         {
-          "action": "EAST",
+          "action": "NORTH",
           "reward": 401,
           "info": {},
           "observation": {
@@ -344,31 +342,30 @@ window.kaggle = {
       ],
       [
         {
-          "action": "NORTH",
-          "reward": 502,
+          "action": "WEST",
+          "reward": 501,
           "info": {},
           "observation": {
             "remainingOverageTime": 60,
             "step": 4,
             "geese": [
               [
-                26,
-                37
+                19
               ],
               [
-                6
+                15
               ]
             ],
             "food": [
-              9,
-              13
+              11,
+              46
             ],
             "index": 0
           },
           "status": "ACTIVE"
         },
         {
-          "action": "EAST",
+          "action": "NORTH",
           "reward": 501,
           "info": {},
           "observation": {
@@ -380,31 +377,30 @@ window.kaggle = {
       ],
       [
         {
-          "action": "NORTH",
-          "reward": 602,
+          "action": "WEST",
+          "reward": 601,
           "info": {},
           "observation": {
             "remainingOverageTime": 60,
             "step": 5,
             "geese": [
               [
-                15,
-                26
+                18
               ],
               [
-                7
+                14
               ]
             ],
             "food": [
-              9,
-              13
+              11,
+              46
             ],
             "index": 0
           },
           "status": "ACTIVE"
         },
         {
-          "action": "EAST",
+          "action": "WEST",
           "reward": 601,
           "info": {},
           "observation": {
@@ -416,31 +412,30 @@ window.kaggle = {
       ],
       [
         {
-          "action": "NORTH",
-          "reward": 702,
+          "action": "WEST",
+          "reward": 701,
           "info": {},
           "observation": {
             "remainingOverageTime": 60,
             "step": 6,
             "geese": [
               [
-                4,
-                15
+                17
               ],
               [
-                8
+                13
               ]
             ],
             "food": [
-              9,
-              13
+              11,
+              46
             ],
             "index": 0
           },
           "status": "ACTIVE"
         },
         {
-          "action": "EAST",
+          "action": "WEST",
           "reward": 701,
           "info": {},
           "observation": {
@@ -452,33 +447,31 @@ window.kaggle = {
       ],
       [
         {
-          "action": "EAST",
-          "reward": 802,
+          "action": "WEST",
+          "reward": 801,
           "info": {},
           "observation": {
             "remainingOverageTime": 60,
             "step": 7,
             "geese": [
               [
-                5,
-                4
+                16
               ],
               [
-                9,
-                8
+                12
               ]
             ],
             "food": [
-              13,
-              41
+              11,
+              46
             ],
             "index": 0
           },
           "status": "ACTIVE"
         },
         {
-          "action": "EAST",
-          "reward": 802,
+          "action": "WEST",
+          "reward": 801,
           "info": {},
           "observation": {
             "remainingOverageTime": 60,
@@ -489,32 +482,31 @@ window.kaggle = {
       ],
       [
         {
-          "action": "SOUTH",
-          "reward": 902,
+          "action": "WEST",
+          "reward": 901,
           "info": {},
           "observation": {
             "remainingOverageTime": 60,
             "step": 8,
             "geese": [
               [
-                16,
-                5
+                15
               ],
               [
-                20,
-                9
+                11,
+                12
               ]
             ],
             "food": [
-              13,
-              41
+              46,
+              8
             ],
             "index": 0
           },
           "status": "ACTIVE"
         },
         {
-          "action": "SOUTH",
+          "action": "WEST",
           "reward": 902,
           "info": {},
           "observation": {
@@ -526,32 +518,31 @@ window.kaggle = {
       ],
       [
         {
-          "action": "WEST",
-          "reward": 1002,
+          "action": "SOUTH",
+          "reward": 1001,
           "info": {},
           "observation": {
             "remainingOverageTime": 60,
             "step": 9,
             "geese": [
               [
-                15,
-                16
+                26
               ],
               [
-                19,
-                20
+                22,
+                11
               ]
             ],
             "food": [
-              13,
-              41
+              46,
+              8
             ],
             "index": 0
           },
           "status": "ACTIVE"
         },
         {
-          "action": "WEST",
+          "action": "SOUTH",
           "reward": 1002,
           "info": {},
           "observation": {
@@ -563,32 +554,31 @@ window.kaggle = {
       ],
       [
         {
-          "action": "WEST",
-          "reward": 1102,
+          "action": "SOUTH",
+          "reward": 1101,
           "info": {},
           "observation": {
             "remainingOverageTime": 60,
             "step": 10,
             "geese": [
               [
-                14,
-                15
+                37
               ],
               [
-                18,
-                19
+                33,
+                22
               ]
             ],
             "food": [
-              13,
-              41
+              46,
+              8
             ],
             "index": 0
           },
           "status": "ACTIVE"
         },
         {
-          "action": "WEST",
+          "action": "SOUTH",
           "reward": 1102,
           "info": {},
           "observation": {
@@ -600,33 +590,31 @@ window.kaggle = {
       ],
       [
         {
-          "action": "WEST",
-          "reward": 1203,
+          "action": "SOUTH",
+          "reward": 1201,
           "info": {},
           "observation": {
             "remainingOverageTime": 60,
             "step": 11,
             "geese": [
               [
-                13,
-                14,
-                15
+                48
               ],
               [
-                17,
-                18
+                44,
+                33
               ]
             ],
             "food": [
-              41,
-              44
+              46,
+              8
             ],
             "index": 0
           },
           "status": "ACTIVE"
         },
         {
-          "action": "WEST",
+          "action": "SOUTH",
           "reward": 1202,
           "info": {},
           "observation": {
@@ -638,33 +626,31 @@ window.kaggle = {
       ],
       [
         {
-          "action": "SOUTH",
-          "reward": 1303,
+          "action": "WEST",
+          "reward": 1301,
           "info": {},
           "observation": {
             "remainingOverageTime": 60,
             "step": 12,
             "geese": [
               [
-                24,
-                13,
-                14
+                47
               ],
               [
-                28,
-                17
+                45,
+                44
               ]
             ],
             "food": [
-              41,
-              44
+              46,
+              8
             ],
             "index": 0
           },
           "status": "ACTIVE"
         },
         {
-          "action": "SOUTH",
+          "action": "EAST",
           "reward": 1302,
           "info": {},
           "observation": {
@@ -676,753 +662,19 @@ window.kaggle = {
       ],
       [
         {
-          "action": "SOUTH",
-          "reward": 1403,
+          "action": "WEST",
+          "reward": 1301,
           "info": {},
           "observation": {
             "remainingOverageTime": 60,
             "step": 13,
             "geese": [
-              [
-                35,
-                24,
-                13
-              ],
-              [
-                39,
-                28
-              ]
-            ],
-            "food": [
-              41,
-              44
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "SOUTH",
-          "reward": 1402,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "EAST",
-          "reward": 1503,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 14,
-            "geese": [
-              [
-                36,
-                35,
-                24
-              ],
-              [
-                40,
-                39
-              ]
-            ],
-            "food": [
-              41,
-              44
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "EAST",
-          "reward": 1502,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "EAST",
-          "reward": 1603,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 15,
-            "geese": [
-              [
-                37,
-                36,
-                35
-              ],
-              [
-                41,
-                40,
-                39
-              ]
-            ],
-            "food": [
-              44,
-              72
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "EAST",
-          "reward": 1603,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "SOUTH",
-          "reward": 1703,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 16,
-            "geese": [
-              [
-                48,
-                37,
-                36
-              ],
-              [
-                52,
-                41,
-                40
-              ]
-            ],
-            "food": [
-              44,
-              72
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "SOUTH",
-          "reward": 1703,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "WEST",
-          "reward": 1803,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 17,
-            "geese": [
-              [
-                47,
-                48,
-                37
-              ],
-              [
-                51,
-                52,
-                41
-              ]
-            ],
-            "food": [
-              44,
-              72
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "WEST",
-          "reward": 1803,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "WEST",
-          "reward": 1903,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 18,
-            "geese": [
-              [
-                46,
-                47,
-                48
-              ],
-              [
-                50,
-                51,
-                52
-              ]
-            ],
-            "food": [
-              44,
-              72
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "WEST",
-          "reward": 1903,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "WEST",
-          "reward": 2003,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 19,
-            "geese": [
-              [
-                45,
-                46,
-                47
-              ],
-              [
-                49,
-                50,
-                51
-              ]
-            ],
-            "food": [
-              44,
-              72
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "WEST",
-          "reward": 2003,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "WEST",
-          "reward": 2104,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 20,
-            "geese": [
-              [
-                44,
-                45,
-                46,
-                47
-              ],
-              [
-                48,
-                49,
-                50
-              ]
-            ],
-            "food": [
-              72,
-              55
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "WEST",
-          "reward": 2103,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "SOUTH",
-          "reward": 2205,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 21,
-            "geese": [
-              [
-                55,
-                44,
-                45,
-                46,
-                47
-              ],
-              [
-                59,
-                48,
-                49
-              ]
-            ],
-            "food": [
-              72,
-              43
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "SOUTH",
-          "reward": 2203,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "SOUTH",
-          "reward": 2305,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 22,
-            "geese": [
-              [
-                66,
-                55,
-                44,
-                45,
-                46
-              ],
-              [
-                70,
-                59,
-                48
-              ]
-            ],
-            "food": [
-              72,
-              43
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "SOUTH",
-          "reward": 2303,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "EAST",
-          "reward": 2405,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 23,
-            "geese": [
-              [
-                67,
-                66,
-                55,
-                44,
-                45
-              ],
-              [
-                71,
-                70,
-                59
-              ]
-            ],
-            "food": [
-              72,
-              43
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "EAST",
-          "reward": 2403,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "EAST",
-          "reward": 2505,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 24,
-            "geese": [
-              [
-                68,
-                67,
-                66,
-                55,
-                44
-              ],
-              [
-                72,
-                71,
-                70,
-                59
-              ]
-            ],
-            "food": [
-              43,
-              63
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "EAST",
-          "reward": 2504,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "NORTH",
-          "reward": 2605,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 25,
-            "geese": [
-              [
-                57,
-                68,
-                67,
-                66,
-                55
-              ],
-              [
-                61,
-                72,
-                71,
-                70
-              ]
-            ],
-            "food": [
-              43,
-              63
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "NORTH",
-          "reward": 2604,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "NORTH",
-          "reward": 2705,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 26,
-            "geese": [
-              [
-                46,
-                57,
-                68,
-                67,
-                66
-              ],
-              [
-                50,
-                61,
-                72,
-                71
-              ]
-            ],
-            "food": [
-              43,
-              63
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "NORTH",
-          "reward": 2704,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "NORTH",
-          "reward": 2805,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 27,
-            "geese": [
-              [
-                35,
-                46,
-                57,
-                68,
-                67
-              ],
-              [
-                39,
-                50,
-                61,
-                72
-              ]
-            ],
-            "food": [
-              43,
-              63
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "NORTH",
-          "reward": 2804,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "EAST",
-          "reward": 2905,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 28,
-            "geese": [
-              [
-                36,
-                35,
-                46,
-                57,
-                68
-              ],
-              [
-                40,
-                39,
-                50,
-                61
-              ]
-            ],
-            "food": [
-              43,
-              63
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "EAST",
-          "reward": 2904,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "EAST",
-          "reward": 3005,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 29,
-            "geese": [
-              [
-                37,
-                36,
-                35,
-                46,
-                57
-              ],
-              [
-                41,
-                40,
-                39,
-                50
-              ]
-            ],
-            "food": [
-              43,
-              63
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "EAST",
-          "reward": 3004,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "EAST",
-          "reward": 3105,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 30,
-            "geese": [
-              [
-                38,
-                37,
-                36,
-                35,
-                46
-              ],
-              [
-                42,
-                41,
-                40,
-                39
-              ]
-            ],
-            "food": [
-              43,
-              63
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "EAST",
-          "reward": 3104,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "EAST",
-          "reward": 3105,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 31,
-            "geese": [
               [],
-              [
-                43,
-                42,
-                41,
-                40,
-                39
-              ]
+              []
             ],
             "food": [
-              63,
-              34
+              8,
+              37
             ],
             "index": 0
           },
@@ -1430,7 +682,7 @@ window.kaggle = {
         },
         {
           "action": "EAST",
-          "reward": 3205,
+          "reward": 1302,
           "info": {},
           "observation": {
             "remainingOverageTime": 60,
@@ -1441,8 +693,8 @@ window.kaggle = {
       ]
     ],
     "rewards": [
-      3105,
-      3205
+      1301,
+      1302
     ],
     "statuses": [
       "DONE",
@@ -1456,373 +708,207 @@ window.kaggle = {
     [],
     [
       {
-        "duration": 1.2e-05,
-        "stdout": "{'remainingOverageTime': 60, 'step': 0, 'geese': [[70], [14]], 'food': [9, 48], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 0, 'geese': [[70], [14]], 'food': [9, 48]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 7e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 1, 'geese': [[59], [3]], 'food': [9, 48], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 1, 'geese': [[59], [3]], 'food': [9, 48]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 7e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 2, 'geese': [[48, 59], [4]], 'food': [9, 13], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 2, 'geese': [[48, 59], [4]], 'food': [9, 13]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 7e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 3, 'geese': [[37, 48], [5]], 'food': [9, 13], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 3, 'geese': [[37, 48], [5]], 'food': [9, 13]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 4, 'geese': [[26, 37], [6]], 'food': [9, 13], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 4, 'geese': [[26, 37], [6]], 'food': [9, 13]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 5, 'geese': [[15, 26], [7]], 'food': [9, 13], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 5, 'geese': [[15, 26], [7]], 'food': [9, 13]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 6, 'geese': [[4, 15], [8]], 'food': [9, 13], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 6, 'geese': [[4, 15], [8]], 'food': [9, 13]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 7, 'geese': [[5, 4], [9, 8]], 'food': [13, 41], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 7, 'geese': [[5, 4], [9, 8]], 'food': [13, 41]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 8, 'geese': [[16, 5], [20, 9]], 'food': [13, 41], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 8, 'geese': [[16, 5], [20, 9]], 'food': [13, 41]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
         "duration": 2.4e-05,
-        "stdout": "{'remainingOverageTime': 60, 'step': 9, 'geese': [[15, 16], [19, 20]], 'food': [13, 41], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 1.6e-05,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 9, 'geese': [[15, 16], [19, 20]], 'food': [13, 41]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 1.9e-05,
-        "stdout": "{'remainingOverageTime': 60, 'step': 10, 'geese': [[14, 15], [18, 19]], 'food': [13, 41], 'index': 0}\n",
+        "stdout": "{'remainingOverageTime': 60, 'step': 0, 'geese': [[70], [59]], 'food': [74, 76], 'index': 0}\n",
         "stderr": ""
       },
       {
         "duration": 1.5e-05,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 10, 'geese': [[14, 15], [18, 19]], 'food': [13, 41]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 1.7e-05,
-        "stdout": "{'remainingOverageTime': 60, 'step': 11, 'geese': [[13, 14, 15], [17, 18]], 'food': [41, 44], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 1.5e-05,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 11, 'geese': [[13, 14, 15], [17, 18]], 'food': [41, 44]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 1.7e-05,
-        "stdout": "{'remainingOverageTime': 60, 'step': 12, 'geese': [[24, 13, 14], [28, 17]], 'food': [41, 44], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 1.5e-05,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 12, 'geese': [[24, 13, 14], [28, 17]], 'food': [41, 44]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 2e-05,
-        "stdout": "{'remainingOverageTime': 60, 'step': 13, 'geese': [[35, 24, 13], [39, 28]], 'food': [41, 44], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 1.6e-05,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 13, 'geese': [[35, 24, 13], [39, 28]], 'food': [41, 44]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 1.8e-05,
-        "stdout": "{'remainingOverageTime': 60, 'step': 14, 'geese': [[36, 35, 24], [40, 39]], 'food': [41, 44], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 1.7e-05,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 14, 'geese': [[36, 35, 24], [40, 39]], 'food': [41, 44]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 7e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 15, 'geese': [[37, 36, 35], [41, 40, 39]], 'food': [44, 72], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 15, 'geese': [[37, 36, 35], [41, 40, 39]], 'food': [44, 72]}\n",
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 0, 'geese': [[70], [59]], 'food': [74, 76]}\n",
         "stderr": ""
       }
     ],
     [
       {
         "duration": 2.1e-05,
-        "stdout": "{'remainingOverageTime': 60, 'step': 16, 'geese': [[48, 37, 36], [52, 41, 40]], 'food': [44, 72], 'index': 0}\n",
+        "stdout": "{'remainingOverageTime': 60, 'step': 1, 'geese': [[71], [70]], 'food': [74, 76], 'index': 0}\n",
         "stderr": ""
       },
       {
         "duration": 1.5e-05,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 16, 'geese': [[48, 37, 36], [52, 41, 40]], 'food': [44, 72]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 1.7e-05,
-        "stdout": "{'remainingOverageTime': 60, 'step': 17, 'geese': [[47, 48, 37], [51, 52, 41]], 'food': [44, 72], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 1.5e-05,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 17, 'geese': [[47, 48, 37], [51, 52, 41]], 'food': [44, 72]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 1.7e-05,
-        "stdout": "{'remainingOverageTime': 60, 'step': 18, 'geese': [[46, 47, 48], [50, 51, 52]], 'food': [44, 72], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 1.5e-05,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 18, 'geese': [[46, 47, 48], [50, 51, 52]], 'food': [44, 72]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 1.7e-05,
-        "stdout": "{'remainingOverageTime': 60, 'step': 19, 'geese': [[45, 46, 47], [49, 50, 51]], 'food': [44, 72], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 1.5e-05,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 19, 'geese': [[45, 46, 47], [49, 50, 51]], 'food': [44, 72]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 1.8e-05,
-        "stdout": "{'remainingOverageTime': 60, 'step': 20, 'geese': [[44, 45, 46, 47], [48, 49, 50]], 'food': [72, 55], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 1.5e-05,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 20, 'geese': [[44, 45, 46, 47], [48, 49, 50]], 'food': [72, 55]}\n",
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 1, 'geese': [[71], [70]], 'food': [74, 76]}\n",
         "stderr": ""
       }
     ],
     [
       {
         "duration": 1.2e-05,
-        "stdout": "{'remainingOverageTime': 60, 'step': 21, 'geese': [[55, 44, 45, 46, 47], [59, 48, 49]], 'food': [72, 43], 'index': 0}\n",
+        "stdout": "{'remainingOverageTime': 60, 'step': 2, 'geese': [[72], [71]], 'food': [74, 76], 'index': 0}\n",
         "stderr": ""
       },
       {
         "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 21, 'geese': [[55, 44, 45, 46, 47], [59, 48, 49]], 'food': [72, 43]}\n",
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 2, 'geese': [[72], [71]], 'food': [74, 76]}\n",
         "stderr": ""
       }
     ],
     [
       {
         "duration": 7e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 22, 'geese': [[66, 55, 44, 45, 46], [70, 59, 48]], 'food': [72, 43], 'index': 0}\n",
+        "stdout": "{'remainingOverageTime': 60, 'step': 3, 'geese': [[73], [72]], 'food': [74, 76], 'index': 0}\n",
         "stderr": ""
       },
       {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 22, 'geese': [[66, 55, 44, 45, 46], [70, 59, 48]], 'food': [72, 43]}\n",
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 3, 'geese': [[73], [72]], 'food': [74, 76]}\n",
+        "stderr": ""
+      }
+    ],
+    [],
+    [],
+    [
+      {
+        "duration": 9e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 0, 'geese': [[43], [59]], 'food': [11, 46], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 0, 'geese': [[43], [59]], 'food': [11, 46]}\n",
         "stderr": ""
       }
     ],
     [
       {
         "duration": 7e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 23, 'geese': [[67, 66, 55, 44, 45], [71, 70, 59]], 'food': [72, 43], 'index': 0}\n",
+        "stdout": "{'remainingOverageTime': 60, 'step': 1, 'geese': [[32], [48]], 'food': [11, 46], 'index': 0}\n",
         "stderr": ""
       },
       {
         "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 23, 'geese': [[67, 66, 55, 44, 45], [71, 70, 59]], 'food': [72, 43]}\n",
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 1, 'geese': [[32], [48]], 'food': [11, 46]}\n",
         "stderr": ""
       }
     ],
     [
       {
         "duration": 7e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 24, 'geese': [[68, 67, 66, 55, 44], [72, 71, 70, 59]], 'food': [43, 63], 'index': 0}\n",
+        "stdout": "{'remainingOverageTime': 60, 'step': 2, 'geese': [[21], [37]], 'food': [11, 46], 'index': 0}\n",
         "stderr": ""
       },
       {
         "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 24, 'geese': [[68, 67, 66, 55, 44], [72, 71, 70, 59]], 'food': [43, 63]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 7e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 25, 'geese': [[57, 68, 67, 66, 55], [61, 72, 71, 70]], 'food': [43, 63], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 25, 'geese': [[57, 68, 67, 66, 55], [61, 72, 71, 70]], 'food': [43, 63]}\n",
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 2, 'geese': [[21], [37]], 'food': [11, 46]}\n",
         "stderr": ""
       }
     ],
     [
       {
         "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 26, 'geese': [[46, 57, 68, 67, 66], [50, 61, 72, 71]], 'food': [43, 63], 'index': 0}\n",
+        "stdout": "{'remainingOverageTime': 60, 'step': 3, 'geese': [[20], [26]], 'food': [11, 46], 'index': 0}\n",
         "stderr": ""
       },
       {
         "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 26, 'geese': [[46, 57, 68, 67, 66], [50, 61, 72, 71]], 'food': [43, 63]}\n",
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 3, 'geese': [[20], [26]], 'food': [11, 46]}\n",
         "stderr": ""
       }
     ],
     [
       {
         "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 27, 'geese': [[35, 46, 57, 68, 67], [39, 50, 61, 72]], 'food': [43, 63], 'index': 0}\n",
+        "stdout": "{'remainingOverageTime': 60, 'step': 4, 'geese': [[19], [15]], 'food': [11, 46], 'index': 0}\n",
         "stderr": ""
       },
       {
         "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 27, 'geese': [[35, 46, 57, 68, 67], [39, 50, 61, 72]], 'food': [43, 63]}\n",
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 4, 'geese': [[19], [15]], 'food': [11, 46]}\n",
         "stderr": ""
       }
     ],
     [
       {
         "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 28, 'geese': [[36, 35, 46, 57, 68], [40, 39, 50, 61]], 'food': [43, 63], 'index': 0}\n",
+        "stdout": "{'remainingOverageTime': 60, 'step': 5, 'geese': [[18], [14]], 'food': [11, 46], 'index': 0}\n",
         "stderr": ""
       },
       {
         "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 28, 'geese': [[36, 35, 46, 57, 68], [40, 39, 50, 61]], 'food': [43, 63]}\n",
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 5, 'geese': [[18], [14]], 'food': [11, 46]}\n",
         "stderr": ""
       }
     ],
     [
       {
         "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 29, 'geese': [[37, 36, 35, 46, 57], [41, 40, 39, 50]], 'food': [43, 63], 'index': 0}\n",
+        "stdout": "{'remainingOverageTime': 60, 'step': 6, 'geese': [[17], [13]], 'food': [11, 46], 'index': 0}\n",
         "stderr": ""
       },
       {
         "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 29, 'geese': [[37, 36, 35, 46, 57], [41, 40, 39, 50]], 'food': [43, 63]}\n",
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 6, 'geese': [[17], [13]], 'food': [11, 46]}\n",
         "stderr": ""
       }
     ],
     [
       {
         "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 30, 'geese': [[38, 37, 36, 35, 46], [42, 41, 40, 39]], 'food': [43, 63], 'index': 0}\n",
+        "stdout": "{'remainingOverageTime': 60, 'step': 7, 'geese': [[16], [12]], 'food': [11, 46], 'index': 0}\n",
         "stderr": ""
       },
       {
         "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 30, 'geese': [[38, 37, 36, 35, 46], [42, 41, 40, 39]], 'food': [43, 63]}\n",
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 7, 'geese': [[16], [12]], 'food': [11, 46]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 8, 'geese': [[15], [11, 12]], 'food': [46, 8], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 8, 'geese': [[15], [11, 12]], 'food': [46, 8]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 9, 'geese': [[26], [22, 11]], 'food': [46, 8], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 9, 'geese': [[26], [22, 11]], 'food': [46, 8]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 10, 'geese': [[37], [33, 22]], 'food': [46, 8], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 10, 'geese': [[37], [33, 22]], 'food': [46, 8]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 11, 'geese': [[48], [44, 33]], 'food': [46, 8], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 11, 'geese': [[48], [44, 33]], 'food': [46, 8]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 12, 'geese': [[47], [45, 44]], 'food': [46, 8], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 12, 'geese': [[47], [45, 44]], 'food': [46, 8]}\n",
         "stderr": ""
       }
     ]

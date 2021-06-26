@@ -1,18 +1,26 @@
 from kaggle_environments.envs.hungry_geese.hungry_geese import Observation, Configuration, Action, row_col
 from kaggle_environments import make
+import os
 
+RUN_FOLDER = 'runs'
 
 def main():
-    game = make('hungry_geese')
-    game.run([agent, agent])
-    write_game_replay(game)
+    clean_html()
+    for i in range(0, 5):
+        game = make('hungry_geese')
+        game.run([agent, agent])
+        write_game_replay(game, i)
     return 0
 
 
-def write_game_replay(game):
+def clean_html():
+    for html_file in os.listdir(RUN_FOLDER):
+        os.remove(os.path.join(RUN_FOLDER, html_file))
+
+def write_game_replay(game, idx):
     """ Writes game replay to html file """
     html_string = game.render(mode='html')
-    html_file = open('./replay.html', 'w')
+    html_file = open(os.path.join(RUN_FOLDER, 'run_{0}.html'.format(idx)), 'w')
     html_file.write(html_string)
 
 
