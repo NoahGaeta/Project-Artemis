@@ -59,7 +59,7 @@ window.kaggle = {
   "step": 0,
   "controls": true,
   "environment": {
-    "id": "76df5ccc-d67b-11eb-bab7-1e006226cc39",
+    "id": "463f14f0-d693-11eb-ba40-1e006226cc39",
     "name": "hungry_geese",
     "title": "Hungry Geese",
     "description": "Similar to the classic snake game with multiple players",
@@ -210,15 +210,15 @@ window.kaggle = {
             "step": 0,
             "geese": [
               [
-                57
+                44
               ],
               [
-                4
+                33
               ]
             ],
             "food": [
-              72,
-              73
+              38,
+              74
             ],
             "index": 0
           },
@@ -237,7 +237,7 @@ window.kaggle = {
       ],
       [
         {
-          "action": "SOUTH",
+          "action": "NORTH",
           "reward": 201,
           "info": {},
           "observation": {
@@ -245,22 +245,22 @@ window.kaggle = {
             "step": 1,
             "geese": [
               [
-                68
+                33
               ],
               [
-                15
+                34
               ]
             ],
             "food": [
-              72,
-              73
+              38,
+              74
             ],
             "index": 0
           },
           "status": "ACTIVE"
         },
         {
-          "action": "SOUTH",
+          "action": "EAST",
           "reward": 201,
           "info": {},
           "observation": {
@@ -280,22 +280,22 @@ window.kaggle = {
             "step": 2,
             "geese": [
               [
-                69
+                34
               ],
               [
-                26
+                35
               ]
             ],
             "food": [
-              72,
-              73
+              38,
+              74
             ],
             "index": 0
           },
           "status": "ACTIVE"
         },
         {
-          "action": "SOUTH",
+          "action": "EAST",
           "reward": 301,
           "info": {},
           "observation": {
@@ -315,22 +315,22 @@ window.kaggle = {
             "step": 3,
             "geese": [
               [
-                70
+                35
               ],
               [
-                37
+                36
               ]
             ],
             "food": [
-              72,
-              73
+              38,
+              74
             ],
             "index": 0
           },
           "status": "ACTIVE"
         },
         {
-          "action": "SOUTH",
+          "action": "EAST",
           "reward": 401,
           "info": {},
           "observation": {
@@ -350,22 +350,22 @@ window.kaggle = {
             "step": 4,
             "geese": [
               [
-                71
+                36
               ],
               [
-                48
+                37
               ]
             ],
             "food": [
-              72,
-              73
+              38,
+              74
             ],
             "index": 0
           },
           "status": "ACTIVE"
         },
         {
-          "action": "SOUTH",
+          "action": "EAST",
           "reward": 501,
           "info": {},
           "observation": {
@@ -378,103 +378,29 @@ window.kaggle = {
       [
         {
           "action": "EAST",
-          "reward": 602,
+          "reward": 501,
           "info": {},
           "observation": {
             "remainingOverageTime": 60,
             "step": 5,
             "geese": [
+              [],
               [
-                72,
-                71
-              ],
-              [
-                59
+                38,
+                37
               ]
             ],
             "food": [
-              73,
-              54
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "SOUTH",
-          "reward": 601,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "EAST",
-          "reward": 703,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 6,
-            "geese": [
-              [
-                73,
-                72,
-                71
-              ],
-              [
-                70
-              ]
-            ],
-            "food": [
-              54,
-              69
-            ],
-            "index": 0
-          },
-          "status": "ACTIVE"
-        },
-        {
-          "action": "SOUTH",
-          "reward": 701,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "index": 1
-          },
-          "status": "ACTIVE"
-        }
-      ],
-      [
-        {
-          "action": "NORTH",
-          "reward": 803,
-          "info": {},
-          "observation": {
-            "remainingOverageTime": 60,
-            "step": 7,
-            "geese": [
-              [
-                62,
-                73,
-                72
-              ],
-              []
-            ],
-            "food": [
-              54,
-              69
+              74,
+              76
             ],
             "index": 0
           },
           "status": "DONE"
         },
         {
-          "action": "NORTH",
-          "reward": 701,
+          "action": "EAST",
+          "reward": 602,
           "info": {},
           "observation": {
             "remainingOverageTime": 60,
@@ -485,8 +411,8 @@ window.kaggle = {
       ]
     ],
     "rewards": [
-      803,
-      701
+      501,
+      602
     ],
     "statuses": [
       "DONE",
@@ -500,49 +426,331 @@ window.kaggle = {
     [],
     [
       {
-        "duration": 2.4e-05,
-        "stdout": "{'remainingOverageTime': 60, 'step': 0, 'geese': [[70], [59]], 'food': [74, 76], 'index': 0}\n",
+        "duration": 1e-05,
+        "stdout": "{'remainingOverageTime': 60, 'step': 0, 'geese': [[35], [26]], 'food': [34, 31], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 0, 'geese': [[35], [26]], 'food': [34, 31]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 7e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 1, 'geese': [[34, 35], [37]], 'food': [31, 52], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 1, 'geese': [[34, 35], [37]], 'food': [31, 52]}\n",
+        "stderr": ""
+      }
+    ],
+    [],
+    [],
+    [
+      {
+        "duration": 1.1e-05,
+        "stdout": "{'remainingOverageTime': 60, 'step': 0, 'geese': [[45], [32]], 'food': [65, 67], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 0, 'geese': [[45], [32]], 'food': [65, 67]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 7e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 1, 'geese': [[56], [43]], 'food': [65, 67], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 1, 'geese': [[56], [43]], 'food': [65, 67]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 7e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 2, 'geese': [[57], [54]], 'food': [65, 67], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 2, 'geese': [[57], [54]], 'food': [65, 67]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 7e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 3, 'geese': [[58], [65, 54]], 'food': [67, 6], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 3, 'geese': [[58], [65, 54]], 'food': [67, 6]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 4, 'geese': [[69], [76, 65]], 'food': [67, 6], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 4, 'geese': [[69], [76, 65]], 'food': [67, 6]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 5, 'geese': [[68], [75, 76]], 'food': [67, 6], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 5, 'geese': [[68], [75, 76]], 'food': [67, 6]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 6, 'geese': [[67, 68], [74, 75]], 'food': [6, 56], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 6, 'geese': [[67, 68], [74, 75]], 'food': [6, 56]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 7, 'geese': [[56, 67, 68], [63, 74]], 'food': [6, 39], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 7, 'geese': [[56, 67, 68], [63, 74]], 'food': [6, 39]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 8, 'geese': [[45, 56, 67], [52, 63]], 'food': [6, 39], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 8, 'geese': [[45, 56, 67], [52, 63]], 'food': [6, 39]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 9, 'geese': [[34, 45, 56], [41, 52]], 'food': [6, 39], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 9, 'geese': [[34, 45, 56], [41, 52]], 'food': [6, 39]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 10, 'geese': [[23, 34, 45], [30, 41]], 'food': [6, 39], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 10, 'geese': [[23, 34, 45], [30, 41]], 'food': [6, 39]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 11, 'geese': [[12, 23, 34], [19, 30]], 'food': [6, 39], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 11, 'geese': [[12, 23, 34], [19, 30]], 'food': [6, 39]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 12, 'geese': [[1, 12, 23], [8, 19]], 'food': [6, 39], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 12, 'geese': [[1, 12, 23], [8, 19]], 'food': [6, 39]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 13, 'geese': [[2, 1, 12], [7, 8]], 'food': [6, 39], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 13, 'geese': [[2, 1, 12], [7, 8]], 'food': [6, 39]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 14, 'geese': [[3, 2, 1], [6, 7, 8]], 'food': [39, 27], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 14, 'geese': [[3, 2, 1], [6, 7, 8]], 'food': [39, 27]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 15, 'geese': [[14, 3, 2], [17, 6, 7]], 'food': [39, 27], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 15, 'geese': [[14, 3, 2], [17, 6, 7]], 'food': [39, 27]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 16, 'geese': [[25, 14, 3], [28, 17, 6]], 'food': [39, 27], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 16, 'geese': [[25, 14, 3], [28, 17, 6]], 'food': [39, 27]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 7e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 17, 'geese': [[36, 25, 14], [39, 28, 17, 6]], 'food': [27, 62], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 17, 'geese': [[36, 25, 14], [39, 28, 17, 6]], 'food': [27, 62]}\n",
+        "stderr": ""
+      }
+    ],
+    [],
+    [],
+    [
+      {
+        "duration": 1.1e-05,
+        "stdout": "{'remainingOverageTime': 60, 'step': 0, 'geese': [[2], [49]], 'food': [70, 46], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 0, 'geese': [[2], [49]], 'food': [70, 46]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 7e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 1, 'geese': [[13], [60]], 'food': [70, 46], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 1, 'geese': [[13], [60]], 'food': [70, 46]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 2, 'geese': [[24], [71]], 'food': [70, 46], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 2, 'geese': [[24], [71]], 'food': [70, 46]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 7e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 3, 'geese': [[35], [70, 71]], 'food': [46, 1], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 3, 'geese': [[35], [70, 71]], 'food': [46, 1]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 7e-06,
+        "stdout": "{'remainingOverageTime': 60, 'step': 4, 'geese': [[46, 35], [59, 70]], 'food': [1, 24], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 5e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 4, 'geese': [[46, 35], [59, 70]], 'food': [1, 24]}\n",
+        "stderr": ""
+      }
+    ],
+    [],
+    [],
+    [
+      {
+        "duration": 2.9e-05,
+        "stdout": "{'remainingOverageTime': 60, 'step': 0, 'geese': [[35], [68]], 'food': [62, 58], 'index': 0}\n",
+        "stderr": ""
+      },
+      {
+        "duration": 1.6e-05,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 0, 'geese': [[35], [68]], 'food': [62, 58]}\n",
+        "stderr": ""
+      }
+    ],
+    [
+      {
+        "duration": 1.8e-05,
+        "stdout": "{'remainingOverageTime': 60, 'step': 1, 'geese': [[46], [57]], 'food': [62, 58], 'index': 0}\n",
         "stderr": ""
       },
       {
         "duration": 1.5e-05,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 0, 'geese': [[70], [59]], 'food': [74, 76]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 2.1e-05,
-        "stdout": "{'remainingOverageTime': 60, 'step': 1, 'geese': [[71], [70]], 'food': [74, 76], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 1.5e-05,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 1, 'geese': [[71], [70]], 'food': [74, 76]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 1.2e-05,
-        "stdout": "{'remainingOverageTime': 60, 'step': 2, 'geese': [[72], [71]], 'food': [74, 76], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 2, 'geese': [[72], [71]], 'food': [74, 76]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 7e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 3, 'geese': [[73], [72]], 'food': [74, 76], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 3, 'geese': [[73], [72]], 'food': [74, 76]}\n",
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 1, 'geese': [[46], [57]], 'food': [62, 58]}\n",
         "stderr": ""
       }
     ],
@@ -550,331 +758,61 @@ window.kaggle = {
     [],
     [
       {
-        "duration": 9e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 0, 'geese': [[43], [59]], 'food': [11, 46], 'index': 0}\n",
+        "duration": 1e-05,
+        "stdout": "{'remainingOverageTime': 60, 'step': 0, 'geese': [[44], [33]], 'food': [38, 74], 'index': 0}\n",
         "stderr": ""
       },
       {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 0, 'geese': [[43], [59]], 'food': [11, 46]}\n",
+        "duration": 6e-06,
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 0, 'geese': [[44], [33]], 'food': [38, 74]}\n",
         "stderr": ""
       }
     ],
     [
       {
         "duration": 7e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 1, 'geese': [[32], [48]], 'food': [11, 46], 'index': 0}\n",
+        "stdout": "{'remainingOverageTime': 60, 'step': 1, 'geese': [[33], [34]], 'food': [38, 74], 'index': 0}\n",
         "stderr": ""
       },
       {
         "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 1, 'geese': [[32], [48]], 'food': [11, 46]}\n",
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 1, 'geese': [[33], [34]], 'food': [38, 74]}\n",
         "stderr": ""
       }
     ],
     [
       {
         "duration": 7e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 2, 'geese': [[21], [37]], 'food': [11, 46], 'index': 0}\n",
+        "stdout": "{'remainingOverageTime': 60, 'step': 2, 'geese': [[34], [35]], 'food': [38, 74], 'index': 0}\n",
         "stderr": ""
       },
       {
         "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 2, 'geese': [[21], [37]], 'food': [11, 46]}\n",
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 2, 'geese': [[34], [35]], 'food': [38, 74]}\n",
         "stderr": ""
       }
     ],
     [
       {
         "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 3, 'geese': [[20], [26]], 'food': [11, 46], 'index': 0}\n",
+        "stdout": "{'remainingOverageTime': 60, 'step': 3, 'geese': [[35], [36]], 'food': [38, 74], 'index': 0}\n",
         "stderr": ""
       },
       {
         "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 3, 'geese': [[20], [26]], 'food': [11, 46]}\n",
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 3, 'geese': [[35], [36]], 'food': [38, 74]}\n",
         "stderr": ""
       }
     ],
     [
       {
         "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 4, 'geese': [[19], [15]], 'food': [11, 46], 'index': 0}\n",
+        "stdout": "{'remainingOverageTime': 60, 'step': 4, 'geese': [[36], [37]], 'food': [38, 74], 'index': 0}\n",
         "stderr": ""
       },
       {
         "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 4, 'geese': [[19], [15]], 'food': [11, 46]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 5, 'geese': [[18], [14]], 'food': [11, 46], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 5, 'geese': [[18], [14]], 'food': [11, 46]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 6, 'geese': [[17], [13]], 'food': [11, 46], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 6, 'geese': [[17], [13]], 'food': [11, 46]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 7, 'geese': [[16], [12]], 'food': [11, 46], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 7, 'geese': [[16], [12]], 'food': [11, 46]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 8, 'geese': [[15], [11, 12]], 'food': [46, 8], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 8, 'geese': [[15], [11, 12]], 'food': [46, 8]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 9, 'geese': [[26], [22, 11]], 'food': [46, 8], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 9, 'geese': [[26], [22, 11]], 'food': [46, 8]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 10, 'geese': [[37], [33, 22]], 'food': [46, 8], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 10, 'geese': [[37], [33, 22]], 'food': [46, 8]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 11, 'geese': [[48], [44, 33]], 'food': [46, 8], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 11, 'geese': [[48], [44, 33]], 'food': [46, 8]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 12, 'geese': [[47], [45, 44]], 'food': [46, 8], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 12, 'geese': [[47], [45, 44]], 'food': [46, 8]}\n",
-        "stderr": ""
-      }
-    ],
-    [],
-    [],
-    [
-      {
-        "duration": 8e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 0, 'geese': [[15], [44]], 'food': [3, 68], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 0, 'geese': [[15], [44]], 'food': [3, 68]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 7e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 1, 'geese': [[4], [33]], 'food': [3, 68], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 1, 'geese': [[4], [33]], 'food': [3, 68]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 2, 'geese': [[3, 4], [22]], 'food': [68, 29], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 2, 'geese': [[3, 4], [22]], 'food': [68, 29]}\n",
-        "stderr": ""
-      }
-    ],
-    [],
-    [],
-    [
-      {
-        "duration": 8e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 0, 'geese': [[9], [66]], 'food': [42, 29], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 0, 'geese': [[9], [66]], 'food': [42, 29]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 7e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 1, 'geese': [[20], [55]], 'food': [42, 29], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 1, 'geese': [[20], [55]], 'food': [42, 29]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 2, 'geese': [[31], [44]], 'food': [42, 29], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 2, 'geese': [[31], [44]], 'food': [42, 29]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 3, 'geese': [[42, 31], [33]], 'food': [29, 26], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 3, 'geese': [[42, 31], [33]], 'food': [29, 26]}\n",
-        "stderr": ""
-      }
-    ],
-    [],
-    [],
-    [
-      {
-        "duration": 7e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 0, 'geese': [[57], [4]], 'food': [72, 73], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 0, 'geese': [[57], [4]], 'food': [72, 73]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 7e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 1, 'geese': [[68], [15]], 'food': [72, 73], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 1, 'geese': [[68], [15]], 'food': [72, 73]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 7e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 2, 'geese': [[69], [26]], 'food': [72, 73], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 2, 'geese': [[69], [26]], 'food': [72, 73]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 3, 'geese': [[70], [37]], 'food': [72, 73], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 3, 'geese': [[70], [37]], 'food': [72, 73]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 4, 'geese': [[71], [48]], 'food': [72, 73], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 4, 'geese': [[71], [48]], 'food': [72, 73]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 5, 'geese': [[72, 71], [59]], 'food': [73, 54], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 5, 'geese': [[72, 71], [59]], 'food': [73, 54]}\n",
-        "stderr": ""
-      }
-    ],
-    [
-      {
-        "duration": 6e-06,
-        "stdout": "{'remainingOverageTime': 60, 'step': 6, 'geese': [[73, 72, 71], [70]], 'food': [54, 69], 'index': 0}\n",
-        "stderr": ""
-      },
-      {
-        "duration": 5e-06,
-        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 6, 'geese': [[73, 72, 71], [70]], 'food': [54, 69]}\n",
+        "stdout": "{'remainingOverageTime': 60, 'index': 1, 'step': 4, 'geese': [[36], [37]], 'food': [38, 74]}\n",
         "stderr": ""
       }
     ]
