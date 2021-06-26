@@ -10,12 +10,12 @@
         "runTimeout": 1200
     },
     "description": "Similar to the classic snake game with multiple players",
-    "id": "902e1052-d693-11eb-8e30-1e006226cc39",
+    "id": "89fb484c-d695-11eb-bef3-1e006226cc39",
     "info": {},
     "name": "hungry_geese",
     "rewards": [
-        601,
-        502
+        9917,
+        10019
     ],
     "schema_version": 1,
     "specification": {
@@ -138,7 +138,7 @@
             "description": "steps survived * (max goose length + 1) + current goose length.",
             "minimum": 0,
             "type": [
-                "number",
+                "integer",
                 "null"
             ]
         }
@@ -154,15 +154,15 @@
                 "info": {},
                 "observation": {
                     "food": [
-                        72,
-                        29
+                        58,
+                        61
                     ],
                     "geese": [
                         [
-                            66
+                            21
                         ],
                         [
-                            28
+                            25
                         ]
                     ],
                     "index": 0,
@@ -189,15 +189,15 @@
                 "info": {},
                 "observation": {
                     "food": [
-                        72,
-                        29
+                        58,
+                        61
                     ],
                     "geese": [
                         [
-                            67
+                            11
                         ],
                         [
-                            39
+                            36
                         ]
                     ],
                     "index": 0,
@@ -224,15 +224,15 @@
                 "info": {},
                 "observation": {
                     "food": [
-                        72,
-                        29
+                        58,
+                        61
                     ],
                     "geese": [
                         [
-                            68
+                            12
                         ],
                         [
-                            50
+                            47
                         ]
                     ],
                     "index": 0,
@@ -259,15 +259,16 @@
                 "info": {},
                 "observation": {
                     "food": [
-                        72,
-                        29
+                        61,
+                        20
                     ],
                     "geese": [
                         [
-                            69
+                            13
                         ],
                         [
-                            61
+                            58,
+                            47
                         ]
                     ],
                     "index": 0,
@@ -284,7 +285,7 @@
                     "index": 1,
                     "remainingOverageTime": 60
                 },
-                "reward": 401,
+                "reward": 402,
                 "status": "ACTIVE"
             }
         ],
@@ -294,16 +295,16 @@
                 "info": {},
                 "observation": {
                     "food": [
-                        29,
-                        27
+                        61,
+                        20
                     ],
                     "geese": [
                         [
-                            70
+                            14
                         ],
                         [
-                            72,
-                            61
+                            59,
+                            58
                         ]
                     ],
                     "index": 0,
@@ -314,7 +315,7 @@
                 "status": "ACTIVE"
             },
             {
-                "action": "SOUTH",
+                "action": "EAST",
                 "info": {},
                 "observation": {
                     "index": 1,
@@ -326,25 +327,102 @@
         ],
         [
             {
-                "action": "NORTH",
+                "action": "EAST",
                 "info": {},
                 "observation": {
                     "food": [
-                        29,
-                        27
+                        61,
+                        20
                     ],
                     "geese": [
                         [
-                            59
+                            15
                         ],
-                        []
+                        [
+                            60,
+                            59
+                        ]
                     ],
                     "index": 0,
                     "remainingOverageTime": 60,
                     "step": 5
                 },
                 "reward": 601,
-                "status": "DONE"
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 602,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        20,
+                        48
+                    ],
+                    "geese": [
+                        [
+                            16
+                        ],
+                        [
+                            61,
+                            60,
+                            59
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 6
+                },
+                "reward": 701,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 703,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        20,
+                        48
+                    ],
+                    "geese": [
+                        [
+                            17
+                        ],
+                        [
+                            50,
+                            61,
+                            60
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 7
+                },
+                "reward": 801,
+                "status": "ACTIVE"
             },
             {
                 "action": "NORTH",
@@ -353,7 +431,4824 @@
                     "index": 1,
                     "remainingOverageTime": 60
                 },
-                "reward": 502,
+                "reward": 803,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        20,
+                        48
+                    ],
+                    "geese": [
+                        [
+                            18
+                        ],
+                        [
+                            49,
+                            50,
+                            61
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 8
+                },
+                "reward": 901,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 903,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        20,
+                        25
+                    ],
+                    "geese": [
+                        [
+                            19
+                        ],
+                        [
+                            48,
+                            49,
+                            50,
+                            61
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 9
+                },
+                "reward": 1001,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 1004,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        25,
+                        62
+                    ],
+                    "geese": [
+                        [
+                            20,
+                            19
+                        ],
+                        [
+                            37,
+                            48,
+                            49,
+                            50
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 10
+                },
+                "reward": 1102,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 1104,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        25,
+                        62
+                    ],
+                    "geese": [
+                        [
+                            31,
+                            20
+                        ],
+                        [
+                            26,
+                            37,
+                            48,
+                            49
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 11
+                },
+                "reward": 1202,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 1204,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        62,
+                        9
+                    ],
+                    "geese": [
+                        [
+                            42,
+                            31
+                        ],
+                        [
+                            25,
+                            26,
+                            37,
+                            48,
+                            49
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 12
+                },
+                "reward": 1302,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 1305,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        62,
+                        9
+                    ],
+                    "geese": [
+                        [
+                            53,
+                            42
+                        ],
+                        [
+                            36,
+                            25,
+                            26,
+                            37,
+                            48
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 13
+                },
+                "reward": 1402,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 1405,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        62,
+                        9
+                    ],
+                    "geese": [
+                        [
+                            64,
+                            53
+                        ],
+                        [
+                            47,
+                            36,
+                            25,
+                            26,
+                            37
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 14
+                },
+                "reward": 1502,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 1505,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        62,
+                        9
+                    ],
+                    "geese": [
+                        [
+                            63,
+                            64
+                        ],
+                        [
+                            48,
+                            47,
+                            36,
+                            25,
+                            26
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 15
+                },
+                "reward": 1602,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 1605,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        9,
+                        73
+                    ],
+                    "geese": [
+                        [
+                            62,
+                            63,
+                            64
+                        ],
+                        [
+                            49,
+                            48,
+                            47,
+                            36,
+                            25
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 16
+                },
+                "reward": 1703,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 1705,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        9,
+                        74
+                    ],
+                    "geese": [
+                        [
+                            73,
+                            62,
+                            63,
+                            64
+                        ],
+                        [
+                            50,
+                            49,
+                            48,
+                            47,
+                            36
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 17
+                },
+                "reward": 1804,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 1805,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        9,
+                        46
+                    ],
+                    "geese": [
+                        [
+                            74,
+                            73,
+                            62,
+                            63,
+                            64
+                        ],
+                        [
+                            51,
+                            50,
+                            49,
+                            48,
+                            47
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 18
+                },
+                "reward": 1905,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 1905,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        9,
+                        46
+                    ],
+                    "geese": [
+                        [
+                            8,
+                            74,
+                            73,
+                            62,
+                            63
+                        ],
+                        [
+                            40,
+                            51,
+                            50,
+                            49,
+                            48
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 19
+                },
+                "reward": 2005,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 2005,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        46,
+                        14
+                    ],
+                    "geese": [
+                        [
+                            9,
+                            8,
+                            74,
+                            73,
+                            62,
+                            63
+                        ],
+                        [
+                            29,
+                            40,
+                            51,
+                            50,
+                            49
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 20
+                },
+                "reward": 2106,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 2105,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        46,
+                        14
+                    ],
+                    "geese": [
+                        [
+                            20,
+                            9,
+                            8,
+                            74,
+                            73,
+                            62
+                        ],
+                        [
+                            18,
+                            29,
+                            40,
+                            51,
+                            50
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 21
+                },
+                "reward": 2206,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 2205,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        46,
+                        14
+                    ],
+                    "geese": [
+                        [
+                            21,
+                            20,
+                            9,
+                            8,
+                            74,
+                            73
+                        ],
+                        [
+                            17,
+                            18,
+                            29,
+                            40,
+                            51
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 22
+                },
+                "reward": 2306,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 2305,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        46,
+                        14
+                    ],
+                    "geese": [
+                        [
+                            11,
+                            21,
+                            20,
+                            9,
+                            8,
+                            74
+                        ],
+                        [
+                            16,
+                            17,
+                            18,
+                            29,
+                            40
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 23
+                },
+                "reward": 2406,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 2405,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        46,
+                        14
+                    ],
+                    "geese": [
+                        [
+                            12,
+                            11,
+                            21,
+                            20,
+                            9,
+                            8
+                        ],
+                        [
+                            15,
+                            16,
+                            17,
+                            18,
+                            29
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 24
+                },
+                "reward": 2506,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 2505,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        46,
+                        30
+                    ],
+                    "geese": [
+                        [
+                            13,
+                            12,
+                            11,
+                            21,
+                            20,
+                            9
+                        ],
+                        [
+                            14,
+                            15,
+                            16,
+                            17,
+                            18,
+                            29
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 25
+                },
+                "reward": 2606,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 2606,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        46,
+                        30
+                    ],
+                    "geese": [
+                        [
+                            24,
+                            13,
+                            12,
+                            11,
+                            21,
+                            20
+                        ],
+                        [
+                            25,
+                            14,
+                            15,
+                            16,
+                            17,
+                            18
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 26
+                },
+                "reward": 2706,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 2706,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        46,
+                        30
+                    ],
+                    "geese": [
+                        [
+                            35,
+                            24,
+                            13,
+                            12,
+                            11,
+                            21
+                        ],
+                        [
+                            36,
+                            25,
+                            14,
+                            15,
+                            16,
+                            17
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 27
+                },
+                "reward": 2806,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 2806,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        30,
+                        10
+                    ],
+                    "geese": [
+                        [
+                            46,
+                            35,
+                            24,
+                            13,
+                            12,
+                            11,
+                            21
+                        ],
+                        [
+                            47,
+                            36,
+                            25,
+                            14,
+                            15,
+                            16
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 28
+                },
+                "reward": 2907,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 2906,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        30,
+                        10
+                    ],
+                    "geese": [
+                        [
+                            57,
+                            46,
+                            35,
+                            24,
+                            13,
+                            12,
+                            11
+                        ],
+                        [
+                            48,
+                            47,
+                            36,
+                            25,
+                            14,
+                            15
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 29
+                },
+                "reward": 3007,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 3006,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        30,
+                        10
+                    ],
+                    "geese": [
+                        [
+                            58,
+                            57,
+                            46,
+                            35,
+                            24,
+                            13,
+                            12
+                        ],
+                        [
+                            37,
+                            48,
+                            47,
+                            36,
+                            25,
+                            14
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 30
+                },
+                "reward": 3107,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 3106,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        30,
+                        10
+                    ],
+                    "geese": [
+                        [
+                            59,
+                            58,
+                            57,
+                            46,
+                            35,
+                            24,
+                            13
+                        ],
+                        [
+                            26,
+                            37,
+                            48,
+                            47,
+                            36,
+                            25
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 31
+                },
+                "reward": 3207,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 3206,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        30,
+                        10
+                    ],
+                    "geese": [
+                        [
+                            60,
+                            59,
+                            58,
+                            57,
+                            46,
+                            35,
+                            24
+                        ],
+                        [
+                            27,
+                            26,
+                            37,
+                            48,
+                            47,
+                            36
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 32
+                },
+                "reward": 3307,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 3306,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        30,
+                        10
+                    ],
+                    "geese": [
+                        [
+                            49,
+                            60,
+                            59,
+                            58,
+                            57,
+                            46,
+                            35
+                        ],
+                        [
+                            28,
+                            27,
+                            26,
+                            37,
+                            48,
+                            47
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 33
+                },
+                "reward": 3407,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 3406,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        30,
+                        10
+                    ],
+                    "geese": [
+                        [
+                            38,
+                            49,
+                            60,
+                            59,
+                            58,
+                            57,
+                            46
+                        ],
+                        [
+                            29,
+                            28,
+                            27,
+                            26,
+                            37,
+                            48
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 34
+                },
+                "reward": 3507,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 3506,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        10,
+                        35
+                    ],
+                    "geese": [
+                        [
+                            39,
+                            38,
+                            49,
+                            60,
+                            59,
+                            58,
+                            57
+                        ],
+                        [
+                            30,
+                            29,
+                            28,
+                            27,
+                            26,
+                            37,
+                            48
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 35
+                },
+                "reward": 3607,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 3607,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        10,
+                        35
+                    ],
+                    "geese": [
+                        [
+                            40,
+                            39,
+                            38,
+                            49,
+                            60,
+                            59,
+                            58
+                        ],
+                        [
+                            19,
+                            30,
+                            29,
+                            28,
+                            27,
+                            26,
+                            37
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 36
+                },
+                "reward": 3707,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 3707,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        10,
+                        35
+                    ],
+                    "geese": [
+                        [
+                            41,
+                            40,
+                            39,
+                            38,
+                            49,
+                            60,
+                            59
+                        ],
+                        [
+                            8,
+                            19,
+                            30,
+                            29,
+                            28,
+                            27,
+                            26
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 37
+                },
+                "reward": 3807,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 3807,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        10,
+                        35
+                    ],
+                    "geese": [
+                        [
+                            42,
+                            41,
+                            40,
+                            39,
+                            38,
+                            49,
+                            60
+                        ],
+                        [
+                            9,
+                            8,
+                            19,
+                            30,
+                            29,
+                            28,
+                            27
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 38
+                },
+                "reward": 3907,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 3907,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        35,
+                        2
+                    ],
+                    "geese": [
+                        [
+                            31,
+                            42,
+                            41,
+                            40,
+                            39,
+                            38,
+                            49
+                        ],
+                        [
+                            10,
+                            9,
+                            8,
+                            19,
+                            30,
+                            29,
+                            28,
+                            27
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 39
+                },
+                "reward": 4007,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 4008,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        35,
+                        2
+                    ],
+                    "geese": [
+                        [
+                            20,
+                            31,
+                            42,
+                            41,
+                            40,
+                            39
+                        ],
+                        [
+                            0,
+                            10,
+                            9,
+                            8,
+                            19,
+                            30,
+                            29
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 40
+                },
+                "reward": 4106,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 4107,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        35,
+                        2
+                    ],
+                    "geese": [
+                        [
+                            21,
+                            20,
+                            31,
+                            42,
+                            41,
+                            40
+                        ],
+                        [
+                            1,
+                            0,
+                            10,
+                            9,
+                            8,
+                            19,
+                            30
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 41
+                },
+                "reward": 4206,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 4207,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        35,
+                        23
+                    ],
+                    "geese": [
+                        [
+                            11,
+                            21,
+                            20,
+                            31,
+                            42,
+                            41
+                        ],
+                        [
+                            2,
+                            1,
+                            0,
+                            10,
+                            9,
+                            8,
+                            19,
+                            30
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 42
+                },
+                "reward": 4306,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 4308,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        35,
+                        23
+                    ],
+                    "geese": [
+                        [
+                            12,
+                            11,
+                            21,
+                            20,
+                            31,
+                            42
+                        ],
+                        [
+                            13,
+                            2,
+                            1,
+                            0,
+                            10,
+                            9,
+                            8,
+                            19
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 43
+                },
+                "reward": 4406,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 4408,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        35,
+                        34
+                    ],
+                    "geese": [
+                        [
+                            23,
+                            12,
+                            11,
+                            21,
+                            20,
+                            31,
+                            42
+                        ],
+                        [
+                            24,
+                            13,
+                            2,
+                            1,
+                            0,
+                            10,
+                            9,
+                            8
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 44
+                },
+                "reward": 4507,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 4508,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        73,
+                        65
+                    ],
+                    "geese": [
+                        [
+                            34,
+                            23,
+                            12,
+                            11,
+                            21,
+                            20,
+                            31,
+                            42
+                        ],
+                        [
+                            35,
+                            24,
+                            13,
+                            2,
+                            1,
+                            0,
+                            10,
+                            9,
+                            8
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 45
+                },
+                "reward": 4608,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 4609,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        73,
+                        65
+                    ],
+                    "geese": [
+                        [
+                            45,
+                            34,
+                            23,
+                            12,
+                            11,
+                            21,
+                            20,
+                            31
+                        ],
+                        [
+                            36,
+                            35,
+                            24,
+                            13,
+                            2,
+                            1,
+                            0,
+                            10,
+                            9
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 46
+                },
+                "reward": 4708,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 4709,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        73,
+                        65
+                    ],
+                    "geese": [
+                        [
+                            46,
+                            45,
+                            34,
+                            23,
+                            12,
+                            11,
+                            21,
+                            20
+                        ],
+                        [
+                            37,
+                            36,
+                            35,
+                            24,
+                            13,
+                            2,
+                            1,
+                            0,
+                            10
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 47
+                },
+                "reward": 4808,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 4809,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        73,
+                        65
+                    ],
+                    "geese": [
+                        [
+                            47,
+                            46,
+                            45,
+                            34,
+                            23,
+                            12,
+                            11,
+                            21
+                        ],
+                        [
+                            38,
+                            37,
+                            36,
+                            35,
+                            24,
+                            13,
+                            2,
+                            1,
+                            0
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 48
+                },
+                "reward": 4908,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 4909,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        73,
+                        65
+                    ],
+                    "geese": [
+                        [
+                            48,
+                            47,
+                            46,
+                            45,
+                            34,
+                            23,
+                            12,
+                            11
+                        ],
+                        [
+                            39,
+                            38,
+                            37,
+                            36,
+                            35,
+                            24,
+                            13,
+                            2,
+                            1
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 49
+                },
+                "reward": 5008,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 5009,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        73,
+                        65
+                    ],
+                    "geese": [
+                        [
+                            49,
+                            48,
+                            47,
+                            46,
+                            45,
+                            34,
+                            23,
+                            12
+                        ],
+                        [
+                            40,
+                            39,
+                            38,
+                            37,
+                            36,
+                            35,
+                            24,
+                            13,
+                            2
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 50
+                },
+                "reward": 5108,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 5109,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        73,
+                        65
+                    ],
+                    "geese": [
+                        [
+                            50,
+                            49,
+                            48,
+                            47,
+                            46,
+                            45,
+                            34,
+                            23
+                        ],
+                        [
+                            51,
+                            40,
+                            39,
+                            38,
+                            37,
+                            36,
+                            35,
+                            24,
+                            13
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 51
+                },
+                "reward": 5208,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 5209,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        73,
+                        65
+                    ],
+                    "geese": [
+                        [
+                            61,
+                            50,
+                            49,
+                            48,
+                            47,
+                            46,
+                            45,
+                            34
+                        ],
+                        [
+                            62,
+                            51,
+                            40,
+                            39,
+                            38,
+                            37,
+                            36,
+                            35,
+                            24
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 52
+                },
+                "reward": 5308,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 5309,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        65,
+                        15
+                    ],
+                    "geese": [
+                        [
+                            72,
+                            61,
+                            50,
+                            49,
+                            48,
+                            47,
+                            46,
+                            45
+                        ],
+                        [
+                            73,
+                            62,
+                            51,
+                            40,
+                            39,
+                            38,
+                            37,
+                            36,
+                            35,
+                            24
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 53
+                },
+                "reward": 5408,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 5410,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        65,
+                        15
+                    ],
+                    "geese": [
+                        [
+                            6,
+                            72,
+                            61,
+                            50,
+                            49,
+                            48,
+                            47,
+                            46
+                        ],
+                        [
+                            74,
+                            73,
+                            62,
+                            51,
+                            40,
+                            39,
+                            38,
+                            37,
+                            36,
+                            35
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 54
+                },
+                "reward": 5508,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 5510,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        65,
+                        15
+                    ],
+                    "geese": [
+                        [
+                            17,
+                            6,
+                            72,
+                            61,
+                            50,
+                            49,
+                            48,
+                            47
+                        ],
+                        [
+                            63,
+                            74,
+                            73,
+                            62,
+                            51,
+                            40,
+                            39,
+                            38,
+                            37,
+                            36
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 55
+                },
+                "reward": 5608,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 5610,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        65,
+                        15
+                    ],
+                    "geese": [
+                        [
+                            16,
+                            17,
+                            6,
+                            72,
+                            61,
+                            50,
+                            49,
+                            48
+                        ],
+                        [
+                            64,
+                            63,
+                            74,
+                            73,
+                            62,
+                            51,
+                            40,
+                            39,
+                            38,
+                            37
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 56
+                },
+                "reward": 5708,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 5710,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        66,
+                        44
+                    ],
+                    "geese": [
+                        [
+                            15,
+                            16,
+                            17,
+                            6,
+                            72,
+                            61,
+                            50,
+                            49,
+                            48
+                        ],
+                        [
+                            65,
+                            64,
+                            63,
+                            74,
+                            73,
+                            62,
+                            51,
+                            40,
+                            39,
+                            38,
+                            37
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 57
+                },
+                "reward": 5809,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 5811,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        66,
+                        44
+                    ],
+                    "geese": [
+                        [
+                            26,
+                            15,
+                            16,
+                            17,
+                            6,
+                            72,
+                            61,
+                            50,
+                            49
+                        ],
+                        [
+                            55,
+                            65,
+                            64,
+                            63,
+                            74,
+                            73,
+                            62,
+                            51,
+                            40,
+                            39,
+                            38
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 58
+                },
+                "reward": 5909,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 5911,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        66,
+                        27
+                    ],
+                    "geese": [
+                        [
+                            37,
+                            26,
+                            15,
+                            16,
+                            17,
+                            6,
+                            72,
+                            61,
+                            50
+                        ],
+                        [
+                            44,
+                            55,
+                            65,
+                            64,
+                            63,
+                            74,
+                            73,
+                            62,
+                            51,
+                            40,
+                            39,
+                            38
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 59
+                },
+                "reward": 6009,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 6012,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        66,
+                        27
+                    ],
+                    "geese": [
+                        [
+                            48,
+                            37,
+                            26,
+                            15,
+                            16,
+                            17,
+                            6,
+                            72,
+                            61
+                        ],
+                        [
+                            33,
+                            44,
+                            55,
+                            65,
+                            64,
+                            63,
+                            74,
+                            73,
+                            62,
+                            51,
+                            40,
+                            39
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 60
+                },
+                "reward": 6109,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 6112,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        66,
+                        27
+                    ],
+                    "geese": [
+                        [
+                            49,
+                            48,
+                            37,
+                            26,
+                            15,
+                            16,
+                            17,
+                            6,
+                            72
+                        ],
+                        [
+                            22,
+                            33,
+                            44,
+                            55,
+                            65,
+                            64,
+                            63,
+                            74,
+                            73,
+                            62,
+                            51,
+                            40
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 61
+                },
+                "reward": 6209,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 6212,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        66,
+                        27
+                    ],
+                    "geese": [
+                        [
+                            38,
+                            49,
+                            48,
+                            37,
+                            26,
+                            15,
+                            16,
+                            17,
+                            6
+                        ],
+                        [
+                            23,
+                            22,
+                            33,
+                            44,
+                            55,
+                            65,
+                            64,
+                            63,
+                            74,
+                            73,
+                            62,
+                            51
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 62
+                },
+                "reward": 6309,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 6312,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        66,
+                        56
+                    ],
+                    "geese": [
+                        [
+                            27,
+                            38,
+                            49,
+                            48,
+                            37,
+                            26,
+                            15,
+                            16,
+                            17,
+                            6
+                        ],
+                        [
+                            24,
+                            23,
+                            22,
+                            33,
+                            44,
+                            55,
+                            65,
+                            64,
+                            63,
+                            74,
+                            73,
+                            62
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 63
+                },
+                "reward": 6410,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 6412,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        66,
+                        56
+                    ],
+                    "geese": [
+                        [
+                            28,
+                            27,
+                            38,
+                            49,
+                            48,
+                            37,
+                            26,
+                            15,
+                            16,
+                            17
+                        ],
+                        [
+                            35,
+                            24,
+                            23,
+                            22,
+                            33,
+                            44,
+                            55,
+                            65,
+                            64,
+                            63,
+                            74,
+                            73
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 64
+                },
+                "reward": 6510,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 6512,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        66,
+                        56
+                    ],
+                    "geese": [
+                        [
+                            39,
+                            28,
+                            27,
+                            38,
+                            49,
+                            48,
+                            37,
+                            26,
+                            15,
+                            16
+                        ],
+                        [
+                            46,
+                            35,
+                            24,
+                            23,
+                            22,
+                            33,
+                            44,
+                            55,
+                            65,
+                            64,
+                            63,
+                            74
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 65
+                },
+                "reward": 6610,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 6612,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        66,
+                        56
+                    ],
+                    "geese": [
+                        [
+                            50,
+                            39,
+                            28,
+                            27,
+                            38,
+                            49,
+                            48,
+                            37,
+                            26,
+                            15
+                        ],
+                        [
+                            57,
+                            46,
+                            35,
+                            24,
+                            23,
+                            22,
+                            33,
+                            44,
+                            55,
+                            65,
+                            64,
+                            63
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 66
+                },
+                "reward": 6710,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 6712,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        66,
+                        41
+                    ],
+                    "geese": [
+                        [
+                            61,
+                            50,
+                            39,
+                            28,
+                            27,
+                            38,
+                            49,
+                            48,
+                            37,
+                            26
+                        ],
+                        [
+                            56,
+                            57,
+                            46,
+                            35,
+                            24,
+                            23,
+                            22,
+                            33,
+                            44,
+                            55,
+                            65,
+                            64,
+                            63
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 67
+                },
+                "reward": 6810,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 6813,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        66,
+                        41
+                    ],
+                    "geese": [
+                        [
+                            62,
+                            61,
+                            50,
+                            39,
+                            28,
+                            27,
+                            38,
+                            49,
+                            48,
+                            37
+                        ],
+                        [
+                            67,
+                            56,
+                            57,
+                            46,
+                            35,
+                            24,
+                            23,
+                            22,
+                            33,
+                            44,
+                            55,
+                            65,
+                            64
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 68
+                },
+                "reward": 6910,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 6913,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        41,
+                        73
+                    ],
+                    "geese": [
+                        [
+                            51,
+                            62,
+                            61,
+                            50,
+                            39,
+                            28,
+                            27,
+                            38,
+                            49,
+                            48
+                        ],
+                        [
+                            66,
+                            67,
+                            56,
+                            57,
+                            46,
+                            35,
+                            24,
+                            23,
+                            22,
+                            33,
+                            44,
+                            55,
+                            65,
+                            64
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 69
+                },
+                "reward": 7010,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 7014,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        41,
+                        73
+                    ],
+                    "geese": [
+                        [
+                            40,
+                            51,
+                            62,
+                            61,
+                            50,
+                            39,
+                            28,
+                            27,
+                            38,
+                            49
+                        ],
+                        [
+                            76,
+                            66,
+                            67,
+                            56,
+                            57,
+                            46,
+                            35,
+                            24,
+                            23,
+                            22,
+                            33,
+                            44,
+                            55,
+                            65
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 70
+                },
+                "reward": 7110,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 7114,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        73,
+                        10
+                    ],
+                    "geese": [
+                        [
+                            41,
+                            40,
+                            51,
+                            62,
+                            61,
+                            50,
+                            39,
+                            28,
+                            27,
+                            38,
+                            49
+                        ],
+                        [
+                            75,
+                            76,
+                            66,
+                            67,
+                            56,
+                            57,
+                            46,
+                            35,
+                            24,
+                            23,
+                            22,
+                            33,
+                            44,
+                            55
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 71
+                },
+                "reward": 7211,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 7214,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        73,
+                        10
+                    ],
+                    "geese": [
+                        [
+                            52,
+                            41,
+                            40,
+                            51,
+                            62,
+                            61,
+                            50,
+                            39,
+                            28,
+                            27,
+                            38
+                        ],
+                        [
+                            9,
+                            75,
+                            76,
+                            66,
+                            67,
+                            56,
+                            57,
+                            46,
+                            35,
+                            24,
+                            23,
+                            22,
+                            33,
+                            44
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 72
+                },
+                "reward": 7311,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 7314,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        73,
+                        60
+                    ],
+                    "geese": [
+                        [
+                            63,
+                            52,
+                            41,
+                            40,
+                            51,
+                            62,
+                            61,
+                            50,
+                            39,
+                            28,
+                            27
+                        ],
+                        [
+                            10,
+                            9,
+                            75,
+                            76,
+                            66,
+                            67,
+                            56,
+                            57,
+                            46,
+                            35,
+                            24,
+                            23,
+                            22,
+                            33,
+                            44
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 73
+                },
+                "reward": 7411,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 7415,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        73,
+                        60
+                    ],
+                    "geese": [
+                        [
+                            74,
+                            63,
+                            52,
+                            41,
+                            40,
+                            51,
+                            62,
+                            61,
+                            50,
+                            39,
+                            28
+                        ],
+                        [
+                            21,
+                            10,
+                            9,
+                            75,
+                            76,
+                            66,
+                            67,
+                            56,
+                            57,
+                            46,
+                            35,
+                            24,
+                            23,
+                            22,
+                            33
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 74
+                },
+                "reward": 7511,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 7515,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        60,
+                        34
+                    ],
+                    "geese": [
+                        [
+                            73,
+                            74,
+                            63,
+                            52,
+                            41,
+                            40,
+                            51,
+                            62,
+                            61,
+                            50,
+                            39,
+                            28
+                        ],
+                        [
+                            32,
+                            21,
+                            10,
+                            9,
+                            75,
+                            76,
+                            66,
+                            67,
+                            56,
+                            57,
+                            46,
+                            35,
+                            24,
+                            23,
+                            22
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 75
+                },
+                "reward": 7612,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 7615,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        60,
+                        34
+                    ],
+                    "geese": [
+                        [
+                            72,
+                            73,
+                            74,
+                            63,
+                            52,
+                            41,
+                            40,
+                            51,
+                            62,
+                            61,
+                            50,
+                            39
+                        ],
+                        [
+                            43,
+                            32,
+                            21,
+                            10,
+                            9,
+                            75,
+                            76,
+                            66,
+                            67,
+                            56,
+                            57,
+                            46,
+                            35,
+                            24,
+                            23
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 76
+                },
+                "reward": 7712,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 7715,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        60,
+                        34
+                    ],
+                    "geese": [
+                        [
+                            71,
+                            72,
+                            73,
+                            74,
+                            63,
+                            52,
+                            41,
+                            40,
+                            51,
+                            62,
+                            61,
+                            50
+                        ],
+                        [
+                            33,
+                            43,
+                            32,
+                            21,
+                            10,
+                            9,
+                            75,
+                            76,
+                            66,
+                            67,
+                            56,
+                            57,
+                            46,
+                            35,
+                            24
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 77
+                },
+                "reward": 7812,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 7815,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        45,
+                        25
+                    ],
+                    "geese": [
+                        [
+                            60,
+                            71,
+                            72,
+                            73,
+                            74,
+                            63,
+                            52,
+                            41,
+                            40,
+                            51,
+                            62,
+                            61,
+                            50
+                        ],
+                        [
+                            34,
+                            33,
+                            43,
+                            32,
+                            21,
+                            10,
+                            9,
+                            75,
+                            76,
+                            66,
+                            67,
+                            56,
+                            57,
+                            46,
+                            35,
+                            24
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 78
+                },
+                "reward": 7913,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 7916,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        25,
+                        16
+                    ],
+                    "geese": [
+                        [
+                            49,
+                            60,
+                            71,
+                            72,
+                            73,
+                            74,
+                            63,
+                            52,
+                            41,
+                            40,
+                            51,
+                            62,
+                            61
+                        ],
+                        [
+                            45,
+                            34,
+                            33,
+                            43,
+                            32,
+                            21,
+                            10,
+                            9,
+                            75,
+                            76,
+                            66,
+                            67,
+                            56,
+                            57,
+                            46,
+                            35,
+                            24
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 79
+                },
+                "reward": 8013,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 8017,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        25,
+                        16
+                    ],
+                    "geese": [
+                        [
+                            38,
+                            49,
+                            60,
+                            71,
+                            72,
+                            73,
+                            74,
+                            63,
+                            52,
+                            41,
+                            40,
+                            51
+                        ],
+                        [
+                            44,
+                            45,
+                            34,
+                            33,
+                            43,
+                            32,
+                            21,
+                            10,
+                            9,
+                            75,
+                            76,
+                            66,
+                            67,
+                            56,
+                            57,
+                            46
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 80
+                },
+                "reward": 8112,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 8116,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        25,
+                        16
+                    ],
+                    "geese": [
+                        [
+                            27,
+                            38,
+                            49,
+                            60,
+                            71,
+                            72,
+                            73,
+                            74,
+                            63,
+                            52,
+                            41,
+                            40
+                        ],
+                        [
+                            55,
+                            44,
+                            45,
+                            34,
+                            33,
+                            43,
+                            32,
+                            21,
+                            10,
+                            9,
+                            75,
+                            76,
+                            66,
+                            67,
+                            56,
+                            57
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 81
+                },
+                "reward": 8212,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 8216,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        25,
+                        62
+                    ],
+                    "geese": [
+                        [
+                            16,
+                            27,
+                            38,
+                            49,
+                            60,
+                            71,
+                            72,
+                            73,
+                            74,
+                            63,
+                            52,
+                            41,
+                            40
+                        ],
+                        [
+                            65,
+                            55,
+                            44,
+                            45,
+                            34,
+                            33,
+                            43,
+                            32,
+                            21,
+                            10,
+                            9,
+                            75,
+                            76,
+                            66,
+                            67,
+                            56
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 82
+                },
+                "reward": 8313,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 8316,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        25,
+                        62
+                    ],
+                    "geese": [
+                        [
+                            15,
+                            16,
+                            27,
+                            38,
+                            49,
+                            60,
+                            71,
+                            72,
+                            73,
+                            74,
+                            63,
+                            52,
+                            41
+                        ],
+                        [
+                            64,
+                            65,
+                            55,
+                            44,
+                            45,
+                            34,
+                            33,
+                            43,
+                            32,
+                            21,
+                            10,
+                            9,
+                            75,
+                            76,
+                            66,
+                            67
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 83
+                },
+                "reward": 8413,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 8416,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        25,
+                        62
+                    ],
+                    "geese": [
+                        [
+                            26,
+                            15,
+                            16,
+                            27,
+                            38,
+                            49,
+                            60,
+                            71,
+                            72,
+                            73,
+                            74,
+                            63,
+                            52
+                        ],
+                        [
+                            53,
+                            64,
+                            65,
+                            55,
+                            44,
+                            45,
+                            34,
+                            33,
+                            43,
+                            32,
+                            21,
+                            10,
+                            9,
+                            75,
+                            76,
+                            66
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 84
+                },
+                "reward": 8513,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 8516,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        62,
+                        47
+                    ],
+                    "geese": [
+                        [
+                            25,
+                            26,
+                            15,
+                            16,
+                            27,
+                            38,
+                            49,
+                            60,
+                            71,
+                            72,
+                            73,
+                            74,
+                            63,
+                            52
+                        ],
+                        [
+                            42,
+                            53,
+                            64,
+                            65,
+                            55,
+                            44,
+                            45,
+                            34,
+                            33,
+                            43,
+                            32,
+                            21,
+                            10,
+                            9,
+                            75,
+                            76
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 85
+                },
+                "reward": 8614,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 8616,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        62,
+                        47
+                    ],
+                    "geese": [
+                        [
+                            36,
+                            25,
+                            26,
+                            15,
+                            16,
+                            27,
+                            38,
+                            49,
+                            60,
+                            71,
+                            72,
+                            73,
+                            74,
+                            63
+                        ],
+                        [
+                            41,
+                            42,
+                            53,
+                            64,
+                            65,
+                            55,
+                            44,
+                            45,
+                            34,
+                            33,
+                            43,
+                            32,
+                            21,
+                            10,
+                            9,
+                            75
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 86
+                },
+                "reward": 8714,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 8716,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        62,
+                        3
+                    ],
+                    "geese": [
+                        [
+                            47,
+                            36,
+                            25,
+                            26,
+                            15,
+                            16,
+                            27,
+                            38,
+                            49,
+                            60,
+                            71,
+                            72,
+                            73,
+                            74,
+                            63
+                        ],
+                        [
+                            52,
+                            41,
+                            42,
+                            53,
+                            64,
+                            65,
+                            55,
+                            44,
+                            45,
+                            34,
+                            33,
+                            43,
+                            32,
+                            21,
+                            10,
+                            9
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 87
+                },
+                "reward": 8815,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 8816,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        62,
+                        3
+                    ],
+                    "geese": [
+                        [
+                            48,
+                            47,
+                            36,
+                            25,
+                            26,
+                            15,
+                            16,
+                            27,
+                            38,
+                            49,
+                            60,
+                            71,
+                            72,
+                            73,
+                            74
+                        ],
+                        [
+                            51,
+                            52,
+                            41,
+                            42,
+                            53,
+                            64,
+                            65,
+                            55,
+                            44,
+                            45,
+                            34,
+                            33,
+                            43,
+                            32,
+                            21,
+                            10
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 88
+                },
+                "reward": 8915,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 8916,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        3,
+                        67
+                    ],
+                    "geese": [
+                        [
+                            59,
+                            48,
+                            47,
+                            36,
+                            25,
+                            26,
+                            15,
+                            16,
+                            27,
+                            38,
+                            49,
+                            60,
+                            71,
+                            72,
+                            73
+                        ],
+                        [
+                            62,
+                            51,
+                            52,
+                            41,
+                            42,
+                            53,
+                            64,
+                            65,
+                            55,
+                            44,
+                            45,
+                            34,
+                            33,
+                            43,
+                            32,
+                            21,
+                            10
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 89
+                },
+                "reward": 9015,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 9017,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        3,
+                        67
+                    ],
+                    "geese": [
+                        [
+                            70,
+                            59,
+                            48,
+                            47,
+                            36,
+                            25,
+                            26,
+                            15,
+                            16,
+                            27,
+                            38,
+                            49,
+                            60,
+                            71,
+                            72
+                        ],
+                        [
+                            61,
+                            62,
+                            51,
+                            52,
+                            41,
+                            42,
+                            53,
+                            64,
+                            65,
+                            55,
+                            44,
+                            45,
+                            34,
+                            33,
+                            43,
+                            32,
+                            21
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 90
+                },
+                "reward": 9115,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 9117,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        3,
+                        67
+                    ],
+                    "geese": [
+                        [
+                            4,
+                            70,
+                            59,
+                            48,
+                            47,
+                            36,
+                            25,
+                            26,
+                            15,
+                            16,
+                            27,
+                            38,
+                            49,
+                            60,
+                            71
+                        ],
+                        [
+                            50,
+                            61,
+                            62,
+                            51,
+                            52,
+                            41,
+                            42,
+                            53,
+                            64,
+                            65,
+                            55,
+                            44,
+                            45,
+                            34,
+                            33,
+                            43,
+                            32
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 91
+                },
+                "reward": 9215,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 9217,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        67,
+                        19
+                    ],
+                    "geese": [
+                        [
+                            3,
+                            4,
+                            70,
+                            59,
+                            48,
+                            47,
+                            36,
+                            25,
+                            26,
+                            15,
+                            16,
+                            27,
+                            38,
+                            49,
+                            60,
+                            71
+                        ],
+                        [
+                            39,
+                            50,
+                            61,
+                            62,
+                            51,
+                            52,
+                            41,
+                            42,
+                            53,
+                            64,
+                            65,
+                            55,
+                            44,
+                            45,
+                            34,
+                            33,
+                            43
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 92
+                },
+                "reward": 9316,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 9317,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        67,
+                        19
+                    ],
+                    "geese": [
+                        [
+                            69,
+                            3,
+                            4,
+                            70,
+                            59,
+                            48,
+                            47,
+                            36,
+                            25,
+                            26,
+                            15,
+                            16,
+                            27,
+                            38,
+                            49,
+                            60
+                        ],
+                        [
+                            28,
+                            39,
+                            50,
+                            61,
+                            62,
+                            51,
+                            52,
+                            41,
+                            42,
+                            53,
+                            64,
+                            65,
+                            55,
+                            44,
+                            45,
+                            34,
+                            33
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 93
+                },
+                "reward": 9416,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 9417,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        67,
+                        19
+                    ],
+                    "geese": [
+                        [
+                            68,
+                            69,
+                            3,
+                            4,
+                            70,
+                            59,
+                            48,
+                            47,
+                            36,
+                            25,
+                            26,
+                            15,
+                            16,
+                            27,
+                            38,
+                            49
+                        ],
+                        [
+                            17,
+                            28,
+                            39,
+                            50,
+                            61,
+                            62,
+                            51,
+                            52,
+                            41,
+                            42,
+                            53,
+                            64,
+                            65,
+                            55,
+                            44,
+                            45,
+                            34
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 94
+                },
+                "reward": 9516,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 9517,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "WEST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        19,
+                        72
+                    ],
+                    "geese": [
+                        [
+                            67,
+                            68,
+                            69,
+                            3,
+                            4,
+                            70,
+                            59,
+                            48,
+                            47,
+                            36,
+                            25,
+                            26,
+                            15,
+                            16,
+                            27,
+                            38,
+                            49
+                        ],
+                        [
+                            18,
+                            17,
+                            28,
+                            39,
+                            50,
+                            61,
+                            62,
+                            51,
+                            52,
+                            41,
+                            42,
+                            53,
+                            64,
+                            65,
+                            55,
+                            44,
+                            45
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 95
+                },
+                "reward": 9617,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 9617,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "NORTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        72,
+                        32
+                    ],
+                    "geese": [
+                        [
+                            56,
+                            67,
+                            68,
+                            69,
+                            3,
+                            4,
+                            70,
+                            59,
+                            48,
+                            47,
+                            36,
+                            25,
+                            26,
+                            15,
+                            16,
+                            27,
+                            38
+                        ],
+                        [
+                            19,
+                            18,
+                            17,
+                            28,
+                            39,
+                            50,
+                            61,
+                            62,
+                            51,
+                            52,
+                            41,
+                            42,
+                            53,
+                            64,
+                            65,
+                            55,
+                            44,
+                            45
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 96
+                },
+                "reward": 9717,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 9718,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        72,
+                        32
+                    ],
+                    "geese": [
+                        [
+                            57,
+                            56,
+                            67,
+                            68,
+                            69,
+                            3,
+                            4,
+                            70,
+                            59,
+                            48,
+                            47,
+                            36,
+                            25,
+                            26,
+                            15,
+                            16,
+                            27
+                        ],
+                        [
+                            20,
+                            19,
+                            18,
+                            17,
+                            28,
+                            39,
+                            50,
+                            61,
+                            62,
+                            51,
+                            52,
+                            41,
+                            42,
+                            53,
+                            64,
+                            65,
+                            55,
+                            44
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 97
+                },
+                "reward": 9817,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 9818,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "food": [
+                        72,
+                        32
+                    ],
+                    "geese": [
+                        [
+                            58,
+                            57,
+                            56,
+                            67,
+                            68,
+                            69,
+                            3,
+                            4,
+                            70,
+                            59,
+                            48,
+                            47,
+                            36,
+                            25,
+                            26,
+                            15,
+                            16
+                        ],
+                        [
+                            21,
+                            20,
+                            19,
+                            18,
+                            17,
+                            28,
+                            39,
+                            50,
+                            61,
+                            62,
+                            51,
+                            52,
+                            41,
+                            42,
+                            53,
+                            64,
+                            65,
+                            55
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 98
+                },
+                "reward": 9917,
+                "status": "ACTIVE"
+            },
+            {
+                "action": "EAST",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 9918,
+                "status": "ACTIVE"
+            }
+        ],
+        [
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "food": [
+                        72,
+                        69
+                    ],
+                    "geese": [
+                        [],
+                        [
+                            32,
+                            21,
+                            20,
+                            19,
+                            18,
+                            17,
+                            28,
+                            39,
+                            50,
+                            61,
+                            62,
+                            51,
+                            52,
+                            41,
+                            42,
+                            53,
+                            64,
+                            65,
+                            55
+                        ]
+                    ],
+                    "index": 0,
+                    "remainingOverageTime": 60,
+                    "step": 99
+                },
+                "reward": 9917,
+                "status": "DONE"
+            },
+            {
+                "action": "SOUTH",
+                "info": {},
+                "observation": {
+                    "index": 1,
+                    "remainingOverageTime": 60
+                },
+                "reward": 10019,
                 "status": "DONE"
             }
         ]
