@@ -33,7 +33,7 @@ class Environment(gym.Env):
     def reset(self):
         self.observation_preprocessor = ObservationPreprocessor(self.config, debug=self.debug, center_head=True)
         obs = self.trainer.reset()
-        self.observation = self.observation_preprocessor.process_env_obs(obs)
+        self.observation = self.observation_preprocessor.get_custom_observation(obs)
 
         return self.observation
 

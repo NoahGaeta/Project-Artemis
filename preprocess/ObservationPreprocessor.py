@@ -20,7 +20,15 @@ class ObservationPreprocessor:
         self.min_food = configuration.min_food
         self.last_min_distance_to_food = self.rows * self.cols
     
-    def get_observation(self, obs):
+    def get_custom_observation(self, obs):
+        """Gets custom observation from hungry geese observation
+
+        Args:
+            obs ([dict]): [observation]
+
+        Returns:
+            [array]: [new observation]
+        """
         gym_observation = Observation(obs)
         custom_observation = self._init_empty_observation()
         agent_head, agent_body, agent_tail = self._get_agent(obs)
@@ -37,7 +45,7 @@ class ObservationPreprocessor:
                 custom_observation[body_part.row][body_part.col] = SpaceValues.BODY
         if agent_tail:
             custom_observation[agent_tail.row][agent_tail.col] = SpaceValues.TAIL
-        pr
+        return custom_observation
 
     def _get_agent(self, obs):
         """Gets the current agent head, body, tail position from a observation
@@ -85,6 +93,14 @@ class ObservationPreprocessor:
         return other_geese
     
     def _get_food(self, obs):
+        """Gets the food position from the observation
+
+        Args:
+            obs ([dict]): [observation]
+
+        Returns:
+            [array]: [containing food]
+        """
         transformed_food = []
         for food_pos in obs.food:
             food_row, food_col = row_col(food_pos, self.cols)
@@ -92,12 +108,12 @@ class ObservationPreprocessor:
         
         return transformed_food
 
-    def _init_empty_observation():
+    def _init_empty_observation(self):
         """ Init an empty observation """
         new_observation = []
         for col in range(self.cols):
             for row in range(self.rows):
                 new_observation[col][row] = SpaceValues.EMPTY
-
+    
     def get_rewards(self):
         pass
