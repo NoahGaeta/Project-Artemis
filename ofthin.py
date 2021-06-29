@@ -17,6 +17,7 @@ def main():
         write_game_replay(game, i)
         write_data(game, initial_count + i)
         set_count_file(initial_count + i)
+        
     return 0
 
 
