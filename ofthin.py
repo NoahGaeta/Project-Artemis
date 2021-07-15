@@ -3,7 +3,7 @@ from kaggle_environments.envs.hungry_geese.hungry_geese import Observation, Conf
 from kaggle_environments import make
 import json
 import os
-from . import Environment
+from preprocess.Environment import Environment
 from stable_baselines3.common.env_checker import check_env
 
 HTML_RUN_FOLDER = 'runs_html'
