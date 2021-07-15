@@ -3,6 +3,7 @@ from kaggle_environments.envs.hungry_geese.hungry_geese import Observation, Conf
 from kaggle_environments import make
 import json
 import os
+from preprocess.TrainingPolicy import trainer
 from preprocess.Environment import Environment
 from stable_baselines3.common.env_checker import check_env
 
@@ -12,10 +13,8 @@ JSON_RUN_COUNTER = 'run_counter.txt'
 file = 'myfile.txt'
 
 def main():
-    env = Environment()
-
-
-    check_env(env)
+    
+    print(trainer.policy)
 
     return 0
 #     clean_html()
