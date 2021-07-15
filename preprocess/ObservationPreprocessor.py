@@ -15,7 +15,6 @@ class SpaceValues(Enum):
 class ObservationPreprocessor:
 
     def __init__(self, configuration):
-        print(configuration)
         self.rows = configuration.rows
         self.cols = configuration.columns
         self.hunger_rate = configuration.hunger_rate
@@ -23,14 +22,7 @@ class ObservationPreprocessor:
         self.last_min_distance_to_food = self.rows * self.cols
     
     def get_custom_observation(self, obs):
-        """Gets custom observation from hungry geese observation
-
-        Args:
-            obs ([dict]): [observation]
-
-        Returns:
-            [array]: [new observation]
-        """
+        """ Gets custom observation from hungry geese observation """
         gym_observation = Observation(obs)
         custom_observation = self._init_empty_observation()
         agent_head, agent_body, agent_tail = self._get_agent(obs)
@@ -47,17 +39,10 @@ class ObservationPreprocessor:
                 custom_observation[body_part['row']][body_part['col']] = SpaceValues.BODY.value
         if agent_tail:
             custom_observation[agent_tail['row']][agent_tail['col']] = SpaceValues.TAIL.value
-        return np.array(custom_observation)
+        return np.array(custom_observation, np.float16)
 
     def _get_agent(self, obs):
-        """Gets the current agent head, body, tail position from a observation
-
-        Args:
-            obs ([dict]): [observation]
-
-        Returns:
-            [array]: [array containing agent head, body, and tail positions]
-        """
+        """ Gets the current agent head, body, tail position from a observation """
         agent_idx = obs.index
         agent = obs.geese[agent_idx]
         agent_head = None
@@ -77,14 +62,7 @@ class ObservationPreprocessor:
         return agent_head, agent_body, agent_tail
     
     def _get_other_geese(self, obs):
-        """Gets the other geese positions
-
-        Args:
-            obs ([dict]): [observation]
-
-        Returns:
-            [array]: [array of other goose positions]
-        """
+        """ Gets the other geese positions """
         other_geese = []
         for goose_idx in range(len(obs.geese)):
             if(goose_idx != obs.index):
@@ -95,14 +73,7 @@ class ObservationPreprocessor:
         return other_geese
     
     def _get_food(self, obs):
-        """Gets the food position from the observation
-
-        Args:
-            obs ([dict]): [observation]
-
-        Returns:
-            [array]: [containing food]
-        """
+        """ Gets the food position from the observation """
         transformed_food = []
         for food_pos in obs.food:
             food_row, food_col = row_col(food_pos, self.cols)
