@@ -19,7 +19,7 @@ class Environment(gym.Env):
         self.observation_space = gym.spaces.Box(low=-1, high=1, shape=(self.config.rows, self.config.columns), dtype=np.int8)
         self.step_num = 1
         self.observation_preprocessor = ObservationPreprocessor(self.config)
-        self.trainer = self.evn.train([None, *opponent])
+        self.trainer = self.env.train([None, *opponent])
 
     def step(self, action):
         action += self.action_offset
@@ -37,6 +37,8 @@ class Environment(gym.Env):
         self.observation_preprocessor = ObservationPreprocessor(self.config)
         obs = self.trainer.reset()
         self.observation = self.observation_preprocessor.get_custom_observation(obs)
+        print(self.observation_space)
+        print(self.observation.shape)
 
         return self.observation
 
