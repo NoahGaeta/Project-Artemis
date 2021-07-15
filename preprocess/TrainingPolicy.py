@@ -1,10 +1,13 @@
 from stable_baselines3 import DQN
 from stable_baselines3.common.monitor import Monitor
 from stable_baselines3.common.torch_layers import BaseFeaturesExtractor
+from preprocess.Environment import Environment
 
 import torch as th
 import torch.nn as nn
 import torch.nn.functional as F
+
+env = Environment()
 
 model_name = "dqn"
 m_env = Monitor(env, model_name, allow_early_resets=True)
@@ -13,7 +16,7 @@ policy_kwargs = dict(
     net_arch = [2000, 1000, 500, 1000, 500, 100]
 )
 
-TRAIN_STEPS = 1e6
+TRAIN_STEPS = 1000
 alpha_0 = 1e-6
 alpha_end = 1e-9
 

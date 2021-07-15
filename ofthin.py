@@ -3,7 +3,10 @@ from kaggle_environments.envs.hungry_geese.hungry_geese import Observation, Conf
 from kaggle_environments import make
 import json
 import os
-from preprocess.TrainingPolicy import trainer
+import pandas as pd
+import seaborn as sns
+from matplotlib import pyplot as plt
+from preprocess.TrainingPolicy import TRAIN_STEPS, trainer, model_name
 from preprocess.Environment import Environment
 from stable_baselines3.common.env_checker import check_env
 
@@ -14,7 +17,11 @@ file = 'myfile.txt'
 
 def main():
     
-    print(trainer.policy)
+    df = pd.read_csv(f'{model_name}.monitor.csv', header=1, index_col='t')
+
+    df.rename(columns = {'r':'Episode Reward', 'l':'Episode Length'}, inplace = True) 
+    plt.figure(figsize=(20,5))
+    sns.regplot(data=df, y='Episode Reward', x=df.index)
 
     return 0
 #     clean_html()
