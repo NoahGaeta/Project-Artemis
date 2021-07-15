@@ -26,7 +26,7 @@ class Environment(gym.Env):
         action = Action(action)
 
         obs, reward, done, _ = self.trainer.step(action.name)
-        self.observation = self.observation_preprocessor.process_env_obs(obs)
+        self.observation = self.observation_preprocessor.get_custom_observation(obs)
 
         info = {}
 

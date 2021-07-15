@@ -36,10 +36,8 @@ class ObservationPreprocessor:
         agent_head, agent_body, agent_tail = self._get_agent(obs)
         other_geese = self._get_other_geese(obs)
         food = self._get_food(obs)
-        print(agent_head)
-        print(custom_observation)
-        custom_observation[agent_head['row']][agent_head['col']] = SpaceValues.HEAD.value
-        print(custom_observation[agent_head['row']][agent_head['col']])
+        if agent_head:
+            custom_observation[agent_head['row']][agent_head['col']] = SpaceValues.HEAD.value
         for food_item in food:
             custom_observation[food_item['row']][food_item['col']] = SpaceValues.FOOD.value
         for other_goose_part in other_geese:
@@ -49,7 +47,6 @@ class ObservationPreprocessor:
                 custom_observation[body_part['row']][body_part['col']] = SpaceValues.BODY.value
         if agent_tail:
             custom_observation[agent_tail['row']][agent_tail['col']] = SpaceValues.TAIL.value
-        print(custom_observation)
         return np.array(custom_observation)
 
     def _get_agent(self, obs):
@@ -63,6 +60,7 @@ class ObservationPreprocessor:
         """
         agent_idx = obs.index
         agent = obs.geese[agent_idx]
+        print('AGENT', agent)
         agent_head = None
         agent_tail = None
         agent_body = []
