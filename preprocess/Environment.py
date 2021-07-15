@@ -1,5 +1,7 @@
 from kaggle_environments.envs.hungry_geese.hungry_geese import Action
+from kaggle_environments import make
 import gym
+import numpy as np
 from preprocess.ObservationPreprocessor import ObservationPreprocessor
 
 
@@ -13,10 +15,10 @@ class Environment(gym.Env):
         self.action_offset = action_offset
         self.env = make("hungry_geese", debug = self.debug)
         self.config = self.env.configuration
-        self.action_space = spaces.Discrete(len(self.actions))
-        self.observation_space = spaces.Box(low=-1, high=1, shape=(self.config.rows, self.config.columns), dtype=np.int8)
+        self.action_space = gym.spaces.Discrete(len(self.actions))
+        self.observation_space = gym.spaces.Box(low=-1, high=1, shape=(self.config.rows, self.config.columns), dtype=np.int8)
         self.step_num = 1
-        self.observation_preprocessor = ObservationPreprocessor(self.config, debug=self.debug, center_head=True)
+        self.observation_preprocessor = ObservationPreprocessor(self.config)
 
     def step(self, action):
         action += self.action_offset
@@ -31,7 +33,7 @@ class Environment(gym.Env):
         return self.observation, reward, done, info
 
     def reset(self):
-        self.observation_preprocessor = ObservationPreprocessor(self.config, debug=self.debug, center_head=True)
+        self.observation_preprocessor = ObservationPreprocessor(self.config)
         obs = self.trainer.reset()
         self.observation = self.observation_preprocessor.get_custom_observation(obs)
 

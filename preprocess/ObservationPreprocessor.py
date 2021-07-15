@@ -15,8 +15,9 @@ class SpaceValues(Enum):
 class ObservationPreprocessor:
 
     def __init__(self, configuration):
+        print(configuration)
         self.rows = configuration.rows
-        self.cols = configuration.cols
+        self.cols = configuration.columns
         self.hunger_rate = configuration.hunger_rate
         self.min_food = configuration.min_food
         self.last_min_distance_to_food = self.rows * self.cols

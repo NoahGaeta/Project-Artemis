@@ -12,7 +12,8 @@ JSON_RUN_COUNTER = 'run_counter.txt'
 file = 'myfile.txt'
 
 def main():
-    env = Environment
+    env = Environment()
+
 
     check_env(env)
 
