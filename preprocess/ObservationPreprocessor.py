@@ -47,7 +47,7 @@ class ObservationPreprocessor:
                 custom_observation[body_part['row']][body_part['col']] = SpaceValues.BODY.value
         if agent_tail:
             custom_observation[agent_tail['row']][agent_tail['col']] = SpaceValues.TAIL.value
-        return np.array(custom_observation)
+        return np.array(custom_observation, np.float16)
 
     def _get_agent(self, obs):
         """Gets the current agent head, body, tail position from a observation
