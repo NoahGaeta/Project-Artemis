@@ -37,8 +37,6 @@ class Environment(gym.Env):
         self.observation_preprocessor = ObservationPreprocessor(self.config)
         obs = self.trainer.reset()
         self.observation = self.observation_preprocessor.get_custom_observation(obs)
-        print(self.observation_space)
-        print(self.observation.shape)
 
         return self.observation
 

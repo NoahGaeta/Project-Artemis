@@ -60,7 +60,6 @@ class ObservationPreprocessor:
         """
         agent_idx = obs.index
         agent = obs.geese[agent_idx]
-        print('AGENT', agent)
         agent_head = None
         agent_tail = None
         agent_body = []
@@ -114,8 +113,6 @@ class ObservationPreprocessor:
     def _init_empty_observation(self):
         """ Init an empty observation """
         new_observation = []
-        print(self.cols)
-        print(self.rows)
         for row in range(self.rows):
             new_observation.append([])
             for col in range(self.cols):
