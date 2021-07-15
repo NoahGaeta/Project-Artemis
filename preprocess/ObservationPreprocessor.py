@@ -1,5 +1,6 @@
 from kaggle_environments.envs.hungry_geese.hungry_geese import Observation, adjacent_positions, min_distance, row_col
-import np
+import numpy as np
+from enum import Enum
 
 
 class SpaceValues(Enum):

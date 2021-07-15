@@ -1,6 +1,6 @@
-from kaggle_environments.envs.hungry_geese.hungry_geese import Action, 
+from kaggle_environments.envs.hungry_geese.hungry_geese import Action
 import gym
-from ObservationPreprocessor import ObservationPreprocessor
+from preprocess.ObservationPreprocessor import ObservationPreprocessor
 
 
 class Environment(gym.Env):
